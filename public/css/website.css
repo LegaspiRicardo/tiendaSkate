@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding:0 ;
+    font-family:Lucida Sans;
+    color: #F2F2F2;
+}
+
+body{
+    background-color: #212426;
+}
+
+/* ---------------  Navbar   ----------------*/
+.navbar{
+    min-height: 90px;
+}
+
+.navbar-brand, .nav-link{
+    color: #F2F2F2;
+    opacity: 0.5;
+}
+
+.navbar-brand:hover, .nav-link:hover{
+    color: #60b658;
+    opacity: 1;
+}
+
+
+
+/* ---------------  Portada  ----------------*/
+.portada{
+    margin-bottom: 7%;
+}
+
+.fuente-verde{
+    color: #60b658;
+}
+
+.fuente-gris-claro{
+    opacity: 0.5;
+    font-size: 16px;
+}
+
+.texto-portada{
+    margin-top: 30%;
+    font-size: 24px;
+}
+
+.boton-portada{
+background-color: #60b658;
+color: #212426;
+padding: 1% 3%;
+font-size: 18px;
+border: none;
+border-radius: 30%;
+}
+
+.boton-portada:hover{
+    transform: scale(1.1);
+}
+
+h1{
+    color: #60b658;
+    font-size: 55px;
+}
+
+.imagen-portada{
+    max-width: 80%;
+    transform: scaleX(-1);
+}
+
+
+
+/* ---------------  Categorias   ----------------*/
+.categorias{
+    justify-content: center;
+    margin-bottom: 8%;
+}
+
+.categorias >div{
+}
+
+
+.img-categorias{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    position: relative;
+    border-radius: 5%;
+}
+
+h3{
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+    padding: 1% 3%;
+    border-radius: 5%;
+    opacity: 0.8;
+}
+
+
+h3:hover{
+    background-color: #60b658e0;
+    color: #fafafa;
+    opacity: 1;
+}
+
+
+/*---------   Carrusel tablas----- */
+
+
+ .img-tabla-carrusel{
+    height: 350px;
+    min-width: 250px;
+} 
+
+.cards-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.texto-carrusel-tablas{
+    margin-top: 2%;
+}
+
+.card{
+    background-color: transparent;
+    border: none;
+}
+
+.img-tabla-carrusel:hover{
+    transform: scale(1.3);
+    transition-duration: 1s;
+}
+
+
+
+/*------  Carrusel noticias --------*/
+
+.carrusel-noticias{
+    margin: 10% 0;
+}
+
+.img-carrusel-noticias{
+    max-height: 700px;
+    width: 100%;
+}
+
+.carousel-control-prev, .carousel-control-next{
+    background-color: transparent;
+    border: none;
+}
