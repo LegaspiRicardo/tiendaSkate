@@ -19,4 +19,5 @@ Route::get('/', function () {
 
 
 Route::view('/tiendaSkate', 'website/index')->name('tiendaSkate');
-
+Route::view('/productos', 'website/productos')->name('productos');
+Route::view('/sesion', 'website/iniciosesion')->name('sesion');

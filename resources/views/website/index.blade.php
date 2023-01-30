@@ -30,7 +30,7 @@
 
         <div class="col-3 p-0">
             <img src="images/vansVerdes.jpg" alt="" class="img-categorias">
-            <h3 class="btn-portada">Tenis</h3>
+            <h3>Tenis</h3>
         </div>
         <div class="col-3 p-0">
             <img src="images/longboardPov.jpg" alt="" class="img-categorias">
@@ -473,11 +473,11 @@
 
         <div class="col-4 ml-auto p-0">
             <img src="images/tablaCuadros.jpg" alt="" class="img-blog">
-            <h4 class="btn-blog">Blog</h4>
+            <h3 class="btn-blog">Blog</h3>
         </div>
         <div class="col-4 mr-auto  p-0">
             <img src="images/skating.jpg" alt="" class="img-blog">
-            <h4 class="class=" btn-blog">Eventos</h4>
+            <h3 class="class=" btn-blog">Eventos</h3>
         </div>
     </div>
 
@@ -506,11 +506,11 @@
             </div>
         </div>
 
-        <div class="col-6 ">
+        <div class="col-6 p-0">
 
             <div class="col-10 ml-auto">
             <h2 class="  mb-2">Llamanos</h2>
-            <p class="mb-2">Y podremos ayudarte con tu pedido, buscar existencias y personalizar tu orden. :)</p>
+            <p class="mb-2">Podemos ayudarte a buscar existencia y personalizar tu orden. :)</p>
                 <div class="row">
                     <div class="col-4">
                         <p class="text-center">33 1585 8748</p>
