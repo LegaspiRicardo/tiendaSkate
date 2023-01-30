@@ -9,7 +9,7 @@
     <div class="row portada">
         <div class="col-5 ">
             <div class="col-10 ml-auto texto-portada p-0">
-                <p class="fuente-verde">Tablas, tenis, adrenalina y diversión.</p>
+                <p class="">Tablas, tenis, adrenalina y diversión.</p>
                 <h1 class="">Nuestro estilo de vida</h1>
                 <p class="fuente-gris-claro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vtio ex omnis
                     maiores error eveniet fugiat molestiae similique illo velit dolores?</p>
@@ -42,7 +42,7 @@
         </div>
     </div>
 
-    <div class="row tablas-carrusel">
+    <div class="row carrusel-tablas">
         <div class="col-6 ml-auto">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -165,7 +165,7 @@
     </div>
 
     <div class="row carrusel-noticias">
-        <div id="carouselExampleIndicators" class="carousel slide col-9 mx-auto" data-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide col-12 mx-auto" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -197,7 +197,7 @@
         </div>
     </div>
 
-    <div class="row ropa-carrusel mb-5">
+    <div class="row carrusel-ropa">
         <div class="col-5 text-center texto-carrusel-tablas">
             <h2>Playeras favoritas</h2>
             <p class="col-8 mx-auto mt-5 text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -319,7 +319,7 @@
         </div>
     </div>
 
-    <div class="row tendencias-carrusel mb-5">
+    <div class="row tendencias-carrusel ">
 
         <div class="col-8 mx-auto">
 
@@ -403,7 +403,7 @@
                     </div>
 
 
-                    <a class="carousel-control-prev" href="#carouselCTendenciaControls" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carouselTendenciaControls" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
@@ -413,18 +413,6 @@
                     </a>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="row text-center blog ">
-
-        <div class="col-4 ml-auto p-0">
-            <img src="images/tablaCuadros.jpg" alt="" class="img-blog">
-            <h3 class="btn-portada">Blog</h3>
-        </div>
-        <div class="col-4 mr-auto  p-0">
-            <img src="images/skating.jpg" alt="" class="img-blog">
-            <h3>Eventos</h3>
         </div>
     </div>
 
@@ -481,18 +469,68 @@
         </div>
     </div>
 
+    <div class="row text-center blog ">
+
+        <div class="col-4 ml-auto p-0">
+            <img src="images/tablaCuadros.jpg" alt="" class="img-blog">
+            <h4 class="btn-blog">Blog</h4>
+        </div>
+        <div class="col-4 mr-auto  p-0">
+            <img src="images/skating.jpg" alt="" class="img-blog">
+            <h4 class="class=" btn-blog">Eventos</h4>
+        </div>
+    </div>
+
+
+
     <div class="row contacto-form">
-        <div class="col-4 mx-auto ">
-            <h4 class="d-inline text-center">Contactanos</h4>
-            <p>Te responderemos lo más pronto posible :)</p>
+        <div class="col-6 ml-auto ">
+            <div class="col-10 mx-auto">
+                <h2 class="  mb-2">Contactanos</h2>
+                <p class="mb-3">Te responderemos lo más pronto posible :)</p>
+                <form class="formulario mx-auto needs-validation" method="POST">
+                    <div class="row">
+                        <label for="correo" class="col-6 mb-0 mt-2 ">Correo:</label>
+                        <label for="telefono" class="col-5 ml-auto mb-0 mt-2">Telefono:</label>
 
+                        <input type="mail" name="correo" class="col-6 form-input">
+                        <input type="text" name="telefono" class="col-5 ml-auto form-input">
+
+                        <label for="mensaje" class="col-12 mb-0 mt-5">Mensaje:</label>
+                        <textarea name="mensaje" id="mensaje" cols="25" rows="5" class="col-12 form-input"></textarea>
+                        <input type="text" name="estatus" class="col-12 form-input" value="Pendiente" hidden>
+
+                        <input type="submit" value="Enviar" class="col-3 ml-auto form-btn ">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-6 ">
+
+            <div class="col-10 ml-auto">
+            <h2 class="  mb-2">Llamanos</h2>
+            <p class="mb-2">Y podremos ayudarte con tu pedido, buscar existencias y personalizar tu orden. :)</p>
+                <div class="row">
+                    <div class="col-4">
+                        <p class="text-center">33 1585 8748</p>
+                    </div>
+                    <div class="col-4 mr-auto">
+                        <p>33 1345 8748</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <img src="images/skateBoy.jpg" class="img-formulario" alt="">
+                </div>
+
+            </div>
 
 
         </div>
 
-        <div class="col-6">
 
-        </div>
+
 
     </div>
 
