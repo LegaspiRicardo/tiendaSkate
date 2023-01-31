@@ -211,28 +211,28 @@
                     <div class="carousel-item active">
                         <div class="cards-wrapper">
                             <div class="card">
-                                <img src="images/tablas/tabla11.png" class="card-img-top img-tabla-carrusel text-start" alt="...">
+                                <img src="images/playeras/playera1.png" class="card-img-top img-ropa-carrusel text-start" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Some quiche card's content.</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="images/tablas/tabla12.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <img src="images/playeras/playera2.png" class="card-img-top img-ropa-carrusel" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Some quf the card's content.</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="images/tablas/tabla13.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <img src="images/playeras/playera3.png" class="card-img-top img-ropa-carrusel" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Some quf the card's content.</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="images/tablas/tabla17.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <img src="images/playeras/playera4.png" class="card-img-top img-ropa-carrusel" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Somelk of the card's content.</p>
@@ -243,28 +243,28 @@
                     <div class="carousel-item">
                         <div class="cards-wrapper">
                             <div class="card">
-                                <img src="images/tablas/tabla9.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <img src="images/playeras/playera5.png" class="card-img-top img-ropa-carrusel" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Somef the card's content.</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="images/tablas/tabla10.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <img src="images/playeras/playera6.png" class="card-img-top img-ropa-carrusel" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Som the card's content.</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="images/tablas/tabla18.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <img src="images/playeras/playera7.png" class="card-img-top img-ropa-carrusel" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Some quik of the card's content.</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="images/tablas/tabla16.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <img src="images/playeras/playera8.png" class="card-img-top img-ropa-carrusel" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Somee bulk of the card's content.</p>
@@ -275,28 +275,28 @@
                     <div class="carousel-item">
                         <div class="cards-wrapper">
                             <div class="card">
-                                <img src="images/tablas/tabla6.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <img src="images/playeras/playera9.png" class="card-img-top img-ropa-carrusel" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Sf the card's content.</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="images/tablas/tabla8.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <img src="images/playeras/playera10.png" class="card-img-top img-ropa-carrusel" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Some q of the card's content.</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="images/tablas/tabla8.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <img src="images/playeras/playera5.png" class="card-img-top img-ropa-carrusel" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Somthe card's content.</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="images/tablas/tabla2.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <img src="images/playeras/playera11.png" class="card-img-top img-ropa-carrusel" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Somee card's content.</p>
@@ -329,21 +329,21 @@
                     <div class="carousel-item active">
                         <div class="cards-wrapper">
                             <div class="card">
-                                <img src="images/tablas/tabla11.png" class="card-img-top img-tabla-carrusel text-start" alt="...">
+                                <img src="images/playeras/playeras2.png" class="card-img-top img-tabla-carrusel text-start" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Some quiche card's content.</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="images/tablas/tabla12.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <img src="images/tablas/tabla9.png" class="card-img-top img-tabla-carrusel" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Some quf the card's content.</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="images/tablas/tabla13.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <img src="images/playeras/playeras3.png" class="card-img-top img-tabla-carrusel" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Some quf the card's content.</p>
@@ -354,17 +354,17 @@
                     <div class="carousel-item">
                         <div class="cards-wrapper">
                             <div class="card">
-                                <img src="images/tablas/tabla9.png" class="card-img-top img-tabla-carrusel" alt="...">
-                                <div class="card-body text-center p-0">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Somef the card's content.</p>
-                                </div>
-                            </div>
-                            <div class="card">
                                 <img src="images/tablas/tabla10.png" class="card-img-top img-tabla-carrusel" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Som the card's content.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="images/playeras/playeras1.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <div class="card-body text-center p-0">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">Somef the card's content.</p>
                                 </div>
                             </div>
                             <div class="card">
@@ -379,21 +379,21 @@
                     <div class="carousel-item">
                         <div class="cards-wrapper">
                             <div class="card">
-                                <img src="images/tablas/tabla6.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <img src="images/playeras/playeras5.png" class="card-img-top img-tabla-carrusel" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Sf the card's content.</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="images/tablas/tabla8.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <img src="images/tablas/tabla16.png" class="card-img-top img-tabla-carrusel" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Some q of the card's content.</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="images/tablas/tabla8.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <img src="images/playeras/playera7.png" class="card-img-top img-tabla-carrusel" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Somthe card's content.</p>
