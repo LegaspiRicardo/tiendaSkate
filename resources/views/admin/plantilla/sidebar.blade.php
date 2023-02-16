@@ -8,7 +8,9 @@
                 <li class="text-left"><a href="{{ url('/inventarioRopa') }}" class="sidebarli"> Ropa </a></li>
                 <li class="text-left"><a href="{{ url('/inventarioTenis') }}" class="sidebarli"> Tenis </a></li>
                 <li class="text-left"><a href="{{ url('/inventarioTablas') }}" class="sidebarli"> Tablas </a></li>
-                 <li class="text-left"><a href="" class="sidebarli"> Equipo </a></li>
+                <li class="text-left"><a href="{{ url('/clientes') }}" class="sidebarli">Clientes </a></li>
+                <li class="text-left"><a href="{{ url('/inventario') }}" class="sidebarli">Inventario </a></li>
+                <li class="text-left"><a href="" class="sidebarli"> Equipo </a></li>
             </ul>
         </div>
     </div>
@@ -21,7 +23,8 @@
                 <li class="liSmall"><a href="{{ url('/inventarioRopa') }}" class="sidebarli"> Ropa </a></li>
                 <li class="liSmall"><a href="{{ url('/inventarioTenis') }}" class="sidebarli"> Tenis </a></li>
                 <li class="liSmall"><a href="{{ url('/inventarioTablas') }}" class="sidebarli"> Tablas </a></li>
-                <li class="liSmall"><a href="" class="sidebarli"> Clientes </a></li>
+                <li class="liSmall"><a href="{{ url('/clientes') }}" class="sidebarli"> Clientes </a></li>
+                <li class="liSmall"><a href="{{ url('/inventario') }}" class="sidebarli"> Inventario </a></li>
                 <li class="liSmall"><a href="" class="sidebarli"> Equipo </a></li>
             </ul>
         </div>

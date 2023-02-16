@@ -8,4 +8,6 @@
 <link href='https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css' rel='stylesheet'
     type='text/css'>
 <link rel="stylesheet" href="{{ asset('css/privado.css') }}">
+
+
 <!-- optional CDN for Foundation Icons ^^ -->

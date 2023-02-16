@@ -8,7 +8,7 @@
 </div>
 
 <div class="callout ">
-    <div class="row column">
+    <div class="row ">
         <h2 class="bienvenida">@yield('inventarioCategoria')</h2>
     </div>
 </div>
