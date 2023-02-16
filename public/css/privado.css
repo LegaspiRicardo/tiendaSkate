@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    color: rgb(0, 0, 0);
+    color: black;
 }
 
 
@@ -51,6 +51,7 @@ li{
 
 .off-canvas{
     background-color: rgb(68, 84, 59 , 0.869);
+    z-index: 1;
 }
 
 .off-canvas-content{
@@ -58,13 +59,14 @@ li{
 }
 
 .callout{
-    background-color: rgba(0, 0, 0, 0.774);
-
+    background-color: rgba(0, 0, 0, 0.308);
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .bienvenida{
     font-size: 23px;
-    margin-left: 15%;
+    margin-left: 25%;
 }
 
 .enlaceTitulo{
@@ -74,6 +76,14 @@ li{
 .enlaceTitulo:hover{
     color: white;
 }
+
+
+
+.registroClienteButon{
+    margin-left: 75%;
+}
+
+
 
 @media only screen and (max-width: 1020px) {
 
