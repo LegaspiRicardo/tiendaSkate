@@ -5,9 +5,9 @@ Instalacion de Foundation (en la consola, dentro de la carpeta del proyecto)
 
 Subir unicamente las carpetas
 
-  -App
-
   - Public (Sin la carpeta images).
+  
+  - App
   
   - Resources.
 
