@@ -1,7 +1,4 @@
 
-
-
-
  @extends('website.piezas.plantilla')
  <link href="css/signin.css" rel="stylesheet">
 @section('titulo', 'Tienda de Skate Cool')
@@ -11,6 +8,9 @@
 
       
   <main class="main-cuenta">
+    <img src="/images/grafiti1.jpg" alt="" class="imagen-login-fondo">
+
+    
     <h1 class="titulo"> Inicia Sesión</h1>
 
     <div class="caja-inicio-sesion">
