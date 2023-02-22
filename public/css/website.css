@@ -383,6 +383,7 @@ h3 {
     position: absolute;
     z-index: -1;
     opacity: 0.9;
+    filter: brightness(75%);
 }
 
 .caja-inicio-sesion {
@@ -497,7 +498,6 @@ h6 {
 
 
 .helpText{
-font-size: 13px;
 color:#21242681;
 }
 
@@ -524,7 +524,9 @@ font-size: 15px ;
 }
 
 .img-form-registro{
-    width: 70%;
+    width: 90%;
+    border-radius: 5%;
+    margin-bottom: 2%;
 }
 
 .select-option{
@@ -534,6 +536,21 @@ font-size: 15px ;
 .input-descripcion{
     height: 80px;
 }
+
+.custom-file {
+  overflow: hidden;
+}
+
+.custom-file-input {
+  white-space: nowrap;
+}
+
+.custom-file-label{
+    color: transparent;
+}
+
+
+
 
 @media only screen and (max-width: 1200px) {
     .imagen-login-fondo {
