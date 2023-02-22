@@ -16,7 +16,7 @@ class CreateNotasTable extends Migration
         Schema::create('notas', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('titulo');
-            $table->string('img');
+            $table->string('img')->nullable();
             $table->text('texto');
             $table->timestamps();
         });
