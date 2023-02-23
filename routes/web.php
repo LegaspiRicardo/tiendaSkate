@@ -23,10 +23,18 @@ Route::view('/productos', 'website/productos')->name('productos');
 Route::view('/sesion', 'website/iniciosesion')->name('sesion');
 
 
-Route::view('/panelControl', 'admin/index')->name('panelControl');
+// Route::view('/panelControl', 'admin/index')->name('panelControl');
+Route::view('/panelControl', 'admin/dashboard')->name('panelControl');
 Route::view('/inventarioTenis', 'admin/tenis')->name('inventarioTenis');
 Route::view('/inventarioRopa', 'admin/ropa')->name('inventarioRopa');
 Route::view('/inventarioTablas', 'admin/tablas')->name('inventarioTablas');
 
+
+
 Route::view('/clientes', 'admin/clientes/clientes')->name('clientes');
 Route::view('/inventario', 'admin/productos/productos')->name('inventario');
+
+
+
+
+
