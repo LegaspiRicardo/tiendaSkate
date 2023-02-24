@@ -31,8 +31,9 @@ Route::view('/inventarioTablas', 'admin/tablas')->name('inventarioTablas');
 
 
 
-Route::view('/clientes', 'admin/clientes/clientes')->name('clientes');
-Route::view('/inventario', 'admin/productos/productos')->name('inventario');
+Route::view('/clientes', 'admin/clientes/index')->name('clientes');
+Route::view('/equipo', 'admin/empleados/index')->name('equipo');
+Route::view('/inventario', 'admin/productos/index')->name('inventario');
 
 
 
