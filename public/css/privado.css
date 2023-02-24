@@ -149,6 +149,81 @@ li {
 
 
 
+
+
+
+/* ----- Formularios ----------*/
+
+
+.helpText{
+    color:#21242681;
+    }
+    
+    .txtNegro{
+        color: #212426;
+    }
+    
+    .form-control::placeholder{
+    opacity: 0.5;
+    font-size: 15px ;
+    }
+    
+    
+    .btn-guardar{
+        font-size: 15px;
+        background-color:#7d7d7d;
+        color:#fafafa;
+    }
+    
+    .btn-guardar:hover{
+        
+        background-color:#42943a;
+        color:#fafafa;
+    }
+    
+    .img-form-registro{
+        width: 90%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+    }
+    
+    .select-option{
+        color: #212426;
+    }
+    
+    .input-descripcion{
+        height: 80px;
+    }
+    
+    .custom-file {
+      overflow: hidden;
+    }
+    
+    .custom-file-input {
+      white-space: nowrap;
+    }
+    
+    .custom-file-label{
+        color: transparent;
+    }
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1020px) {
 
     .bienvenida {
@@ -166,5 +241,16 @@ li {
     }
 
 
+    .imagen-login-fondo {
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.9;
+        
+    }
 
+    h6{
+        text-align: center;
+        margin-top: 12%;
+    }
 }
