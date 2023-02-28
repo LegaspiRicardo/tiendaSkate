@@ -1,6 +1,6 @@
     <!-- Buttons trigger modal CLIENTES -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#clienteModal">
-        Registrar Cliente
+    <button type="button" class="btn-cliente" data-toggle="modal" data-target="#clienteModal">
+        +
     </button>
 
 
@@ -10,7 +10,7 @@
             <div class="modal-dialog modal-dialog-centered ">
                 <div class="modal-content ">
                     <div class="modal-header text-center">
-                        <h4 class="text-center txtNegro">Registrar cliente</h4>
+                        <h4 class="text-center txtNegro">Registrar nuevo</h4>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>

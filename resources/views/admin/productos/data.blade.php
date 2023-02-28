@@ -35,6 +35,8 @@
             <td>Bari</td>
             <td>Editor-in-chief</td>
             <td>41</td>
+            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
+            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
         </tr>
         <tr>
             <th scope="row">4</th>
@@ -48,6 +50,8 @@
             <td>Bari</td>
             <td>Editor-in-chief</td>
             <td>41</td>
+            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
+            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
         </tr>
         <tr>
             <th scope="row">4</th>
@@ -61,6 +65,8 @@
             <td>Bari</td>
             <td>Editor-in-chief</td>
             <td>41</td>
+            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
+            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
         </tr>
         <tr>
             <th scope="row">4</th>
@@ -74,6 +80,8 @@
             <td>Bari</td>
             <td>Editor-in-chief</td>
             <td>41</td>
+            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
+            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
         </tr>
         <tr>
             <th scope="row">4</th>
@@ -87,6 +95,8 @@
             <td>Bari</td>
             <td>Editor-in-chief</td>
             <td>41</td>
+            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
+            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
         </tr>
         <tr>
             <th scope="row">4</th>
@@ -100,6 +110,8 @@
             <td>Bari</td>
             <td>Editor-in-chief</td>
             <td>41</td>
+            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
+            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
         </tr>
         <tr>
             <th scope="row">4</th>
@@ -113,6 +125,8 @@
             <td>Bari</td>
             <td>Editor-in-chief</td>
             <td>41</td>
+            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
+            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
         </tr>
         <tr>
             <th scope="row">4</th>
@@ -126,6 +140,8 @@
             <td>Bari</td>
             <td>Editor-in-chief</td>
             <td>41</td>
+            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
+            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
         </tr>
         <tr>
             <th scope="row">4</th>
@@ -139,6 +155,8 @@
             <td>Bari</td>
             <td>Editor-in-chief</td>
             <td>41</td>
+            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
+            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
         </tr>
         <tr>
             <th scope="row">4</th>
@@ -152,7 +170,25 @@
             <td>Bari</td>
             <td>Editor-in-chief</td>
             <td>41</td>
+            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
+            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
         </tr>
+        <tr>
+            <th scope="row">4</th>
+            <td>Jerry</td>
+            <td>Horwitz</td>
+            <td>Italy</td>
+            <td>Bari</td>
+            <td>Editor-in-chief</td>
+            <td>41</td>
+            <td>Italy</td>
+            <td>Bari</td>
+            <td>Editor-in-chief</td>
+            <td>41</td>
+            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
+            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
+        </tr>
+
     </tbody>
     <!--Table body-->
 
