@@ -211,10 +211,35 @@ li {
 
 
 
+/* --------TABLAS--------- */
+.tablaProductos{
+    overflow-x: auto;
+    max-height: 450px;
+}
 
 
-
-
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(180, 180, 180); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:#42943a; 
+  }
 
 
 
