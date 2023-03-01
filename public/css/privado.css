@@ -207,7 +207,7 @@ li {
         color: transparent;
     }
     
-.btn-cliente{
+.btn-registro{
     width: 45px;
     align-content: center;
     font-size: 24px;
@@ -218,7 +218,7 @@ li {
     padding-bottom: 1.5%;
 }
 
-.btn-cliente:hover{
+.btn-registro:hover{
     background-color: #42943a;
 }
 
@@ -226,6 +226,12 @@ li {
 
 /* --------TABLAS--------- */
 .tablaProductos{
+    overflow-x: auto;
+    max-height: 450px;
+    border: solid #7d7d7d1a;
+    border-radius: 10px;
+}
+.tablaPanel{
     overflow-x: auto;
     max-height: 450px;
     border: solid #7d7d7d1a;
@@ -262,13 +268,26 @@ li {
 }
 
 
-.cabezal-tabla-cliente{
+.cabezal-tabla{
+    font-size: 22px;
     background-color:#7d7d7d;
     color: white;
     margin-top: 1%;
     padding: 1% 0 1% 0;
     text-shadow: 2px 2px black;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
