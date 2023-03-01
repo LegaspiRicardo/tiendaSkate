@@ -1,8 +1,10 @@
 <!--Table-->
-<table class="table table-hover table-sm">
+<table class="table table-striped table-hover table-sm">
 
     <!--Table head-->
     <thead>
+    <h3 class="text-center cabezal-tabla m-0">Productos  </h3>
+
         <tr>
             <th>#</th>
             <th>Modelo</th>
@@ -15,8 +17,8 @@
             <th>Estatus</th>
             <th>Descripción</th>
             <th>Imagen</th>
-            <th>Editar</th>
-            <th>Borrar</th>
+            <th></th>
+            <th></th>
         </tr>
     </thead>
     <!--Table head-->

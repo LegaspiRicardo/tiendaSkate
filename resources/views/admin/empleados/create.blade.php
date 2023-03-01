@@ -1,5 +1,5 @@
     <!-- Buttons trigger modal EMPLEADOS -->
-    <button type="button" class="btn btn-cliente" data-toggle="modal" data-target="#empleadoModal">
+    <button type="button" class="btn btn-registro" data-toggle="modal" data-target="#empleadoModal">
         +   
     </button>
 

@@ -5,7 +5,7 @@
     <!--Table head-->
     <thead>
         
-    <h3 class="text-center cabezal-tabla-cliente m-0">Clientes </h3>
+    <h3 class="text-center cabezal-tabla m-0">Clientes nuevos </h3>
         <tr>
             <th>#</th>
             <th>Nombre</th>

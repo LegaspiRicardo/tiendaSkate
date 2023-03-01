@@ -1,5 +1,5 @@
     <!-- Buttons trigger modal PRODUCTOS -->
-    <button type="button" class="btn-cliente" data-toggle="modal" data-target="#productoModal">
+    <button type="button" class="btn-registro" data-toggle="modal" data-target="#productoModal">
         +
     </button>
 
