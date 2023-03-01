@@ -120,13 +120,23 @@ li {
     text-align: center;
 }
 
-.sidebarli {
-    text-decoration: none;
+.sidebarA, .sidebarli{
     color: white;
     opacity: 0.6;
 }
 
-.sidebarli:hover {
+.sidebarA:hover{
+    color: white;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.sidebarItem {
+    text-decoration: none;
+
+}
+
+.sidebarItem:hover {
     opacity: 1;
     color: white;
     font-size: 22px;
@@ -147,9 +157,23 @@ li {
     margin-left: 75%;
 }
 
+.btn-collapse{
+    color:white;
+    font-size: 22px;
+    background-color: transparent;
+    border:none;
+    opacity: 0.6;
+    z-index: 1;
+}
 
+.btn-collapse:hover{
+    opacity: 1;
+}
 
-
+.card-collapse{
+    background-color:#33333349;
+    border: none;
+}
 
 
 /* ----- Formularios ----------*/
