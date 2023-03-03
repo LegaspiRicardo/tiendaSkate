@@ -1,42 +1,41 @@
-@extends('website.piezas.plantilla')
+@extends('website.piezas.plantillaDash')
 
-@section('titulo', 'Tienda de Skate Cool')
+@section('titulo', 'Radical Boards ')
 
 @section('main')
 <main>
 
 
-    <div class="row portada">
-        <div class="col-5 ">
-            <div class="col-10 ml-auto texto-portada p-0">
+<img src="images/skatePark2.jpg" alt="" class="imagen-portada">
+    <div class="row ">
+        <div class="col-6 mr-auto">
+            <div class="col-8 ml-auto texto-portada p-0">
                 <p class="">Tablas, tenis, adrenalina y diversión.</p>
                 <h1 class="">Nuestro estilo de vida</h1>
-                <p class="fuente-gris-claro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vtio ex omnis
-                    maiores error eveniet fugiat molestiae similique illo velit dolores?</p>
-                <button class="mt-4 boton-portada">Ver mas</button>
+                <p class="fuente-gris-claro">Visita nuestra tienda en linea y conoce todos nuestros productos.</p>
+
+                    <button class="mt-4  boton-portada">Ver mas</button>
+
             </div>
 
 
 
         </div>
-        <div class="col-7 ">
-            <div class="col">
-                <img src="images/skatt.png" alt="" class="imagen-portada">
-            </div>
-        </div>
+
+
     </div>
 
     <div class="row text-center categorias">  
-        <div class="col-3 p-0">
-            <img src="images/vansVerdes.jpg" alt="" class="img-categorias">
+        <div class="col-3 p-0 categoriaItem">
+            <img src="images/tenisDalle.png" alt="" class="img-categorias">
             <h3>Tenis</h3>
         </div>
-        <div class="col-3 p-0">
-            <img src="images/miniRoja.jpg" alt="" class="img-categorias">
+        <div class="col-3 p-0 categoriaItem">
+            <img src="images/skateDalle1.png" alt="" class="img-categorias">
             <h3>Tablas</h3>
         </div>
-        <div class="col-3 p-0">
-            <img src="images/hoddie2.jpg" alt="" class="img-categorias">
+        <div class="col-3 p-0 categoriaItem">
+            <img src="images/playeraDalle1.png" alt="" class="img-categorias">
             <h3>Playeras</h3>
         </div>
     </div>
@@ -415,7 +414,7 @@
         </div>
     </div>
 
-    <div class="row marcas-carrusel mb-5">
+    <div class="row marcas-carrusel ">
         <div class="col-8 mx-auto">
 
             <h2 class="text-center mb-5">Marcas disponibles</h2>
@@ -519,9 +518,9 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <!-- <div class="row">
                     <img src="images/skateBoy.jpg" class="img-formulario" alt="">
-                </div>
+                </div> -->
 
             </div>
 
