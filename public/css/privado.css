@@ -192,6 +192,10 @@ li {
     font-size: 15px ;
     }
     
+    .btn-input-img{
+        position: relative;
+        margin-top: 2%;
+    }
     
     .btn-guardar{
         font-size: 15px;
@@ -204,9 +208,20 @@ li {
         background-color:#42943a;
         color:#fafafa;
     }
+
+    .imagenes-form{
+        position: absolute;
+        height: 320px;
+    }
     
+
+.imagen-formulario{
+    height: 280px;
+    width: 295px;
+}
+
     .img-form-registro{
-        width: 90%;
+        max-width: 100%;
         border-radius: 5%;
         margin-bottom: 2%;
     }
