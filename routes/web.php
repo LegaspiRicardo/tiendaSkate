@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ClienteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -35,6 +36,7 @@ Route::view('/clientes', 'admin/clientes/index')->name('clientes');
 Route::view('/equipo', 'admin/empleados/index')->name('equipo');
 Route::view('/inventario', 'admin/productos/index')->name('inventario');
 
+Route::resource('/clienteAdmin',ClienteController::class);
 
 
 
