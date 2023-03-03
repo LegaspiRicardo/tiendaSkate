@@ -19,14 +19,29 @@
                     <form data-abide novalidate>
                         <div class="row">
 
-                            <div class="col-5 text-left">
-                                <img src="/images/miniAzul.jpg" class="img-form-registro" alt="">
+                            <div class="col-5 text-center imagenes-form">
                                 {{-- <div class="custom-file">
                                         <input type="file" class="custom-file-input" id="customFileLang" lang="es"> 
                                         <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
                                     </div> --}}
+                                <div class="col imagen-formulario">
+                                    <img src="/PNGs/image.png" id="preview" src="#" alt="Preview Image" class="img-form-registro mt-2">
+                                </div>
+                                <div class="col">
+                                    <input type="file" id="inputFile" onchange="previewImage();"
+                                        class="form-control btn-input-img" name="img1">
+                                </div>
+
+
+
+
+
+                                {{-- 
+
                                 <input type="text" placeholder="input img" class="form-control" name="img">
-                                <label class="helpText " for="img">Seleccionar Archivo</label>
+                                <label class="helpText " for="img">Seleccionar Archivo</label> --}}
+
+
                             </div>
 
                             <div class="form-group col-7 ml-auto">
@@ -121,3 +136,21 @@
             </div>
         </div>
     </div>
+
+
+
+    <script>
+        function previewImage() {
+            var file = document.getElementById('inputFile').files[0];
+            var preview = document.getElementById('preview');
+            var reader = new FileReader();
+
+            reader.addEventListener("load", function() {
+                preview.src = reader.result;
+            }, false);
+
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>

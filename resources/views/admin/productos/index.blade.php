@@ -9,6 +9,13 @@
     </div>
 
 
+
+      
+
+
+
+
+
         <div class="col-2 mx-auto">
             @include ('admin.productos.create')
 
@@ -21,3 +28,4 @@
     </main>
 
 @endsection
+
