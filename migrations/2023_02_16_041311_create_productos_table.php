@@ -24,7 +24,9 @@ return new class extends Migration
             $table->string('tamano')->nullable();
             $table->string('estatus');
             $table->string('descripcion',255)->nullable();
-            $table->string('img', 255);
+            $table->string('img1', 255);
+            $table->string('img2', 255);
+            $table->string('img3', 255);
             $table->timestamps();
         });
     }
