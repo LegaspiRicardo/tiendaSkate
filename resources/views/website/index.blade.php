@@ -25,6 +25,8 @@
 
     </div>
 
+
+    
     <div class="row text-center categorias">  
         <div class="col-3 p-0 categoriaItem">
             <img src="images/tenisDalle.png" alt="" class="img-categorias">
