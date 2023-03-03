@@ -3,9 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Cliente;
-use App\Http\Requests\StoreClienteRequest;
-use App\Http\Requests\UpdateClienteRequest;
 
+use Illuminate\Http\Request;
 class ClienteController extends Controller
 {
     /**
@@ -15,7 +14,7 @@ class ClienteController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.clientes.index')->with('cliente',Cliente::all());
     }
 
     /**
@@ -25,7 +24,7 @@ class ClienteController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.clientes.index')->with('cliente',Cliente::all());
     }
 
     /**
@@ -34,9 +33,21 @@ class ClienteController extends Controller
      * @param  \App\Http\Requests\StoreClienteRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreClienteRequest $request)
-    {
-        //
+    public function store(Request $request)
+    {   
+        $cliente = new Cliente();
+        $cliente->id = $request->id;
+        $cliente->nombre = $request->nombre;
+        $cliente->correo = $request->correo;
+        $cliente->clave = $request->clave;
+        $cliente->telefono = $request->telefono;
+        $cliente->calle = $request->calle;
+        $cliente->numero = $request->numero;
+        $cliente->colonia = $request->colonia;
+        $cliente->cp = $request->cp;
+
+        $cliente->save();
+        return view('admin.clientes.index')->with('cliente',Cliente::all());
     }
 
     /**
@@ -45,9 +56,10 @@ class ClienteController extends Controller
      * @param  \App\Models\Cliente  $cliente
      * @return \Illuminate\Http\Response
      */
-    public function show(Cliente $cliente)
+    public function show( $id)
     {
-        //
+        $cliente=Cliente::find($id);
+            return view('admin.clientes.show')->with('clietne',$cliente);
     }
 
     /**
@@ -56,9 +68,10 @@ class ClienteController extends Controller
      * @param  \App\Models\Cliente  $cliente
      * @return \Illuminate\Http\Response
      */
-    public function edit(Cliente $cliente)
+    public function edit( $id)
     {
-        //
+        $cliente=Cliente::find($id);
+        return view('admin.clientes.edit')->with('clietne',$cliente);
     }
 
     /**
@@ -68,9 +81,22 @@ class ClienteController extends Controller
      * @param  \App\Models\Cliente  $cliente
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateClienteRequest $request, Cliente $cliente)
+    public function update(Request $request, $id)
     {
-        //
+        $cliente =  Cliente::find($id);
+
+        $cliente->id = $request->id;
+        $cliente->nombre = $request->nombre;
+        $cliente->correo = $request->correo;
+        $cliente->clave = $request->clave;
+        $cliente->telefono = $request->telefono;
+        $cliente->calle = $request->calle;
+        $cliente->numero = $request->numero;
+        $cliente->colonia = $request->colonia;
+        $cliente->cp = $request->cp;
+
+        $cliente->save();
+        return view('admin.clientes.index')->with('cliente',Cliente::all());
     }
 
     /**
@@ -79,8 +105,10 @@ class ClienteController extends Controller
      * @param  \App\Models\Cliente  $cliente
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Cliente $cliente)
+    public function destroy( $id)
     {
-        //
+           $cliente =  Cliente::find($id);
+           $cliente->delete();
+           return view('admin.clientes.index')->with('cliente',Cliente::all());
     }
 }
