@@ -20,42 +20,67 @@
                         <div class="row">
 
                             <div class="col-5 text-center imagenes-form">
-                                {{-- <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="customFileLang" lang="es"> 
-                                        <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
-                                    </div> --}}
-                                <div class="col imagen-formulario">
-                                    <img src="/PNGs/image.png" id="preview" src="#" alt="Preview Image" class="img-form-registro mt-2">
+
+                                <div class="row carrusel-noticias">
+                                    <div id="carouselExampleIndicators" class="carousel slide col-12 mx-auto" data-ride="carousel">
+
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <div class="col imagen-formulario">
+                                                    <img src="/PNGs/image.png" id="preview1" src="#" alt="Preview Image" class="img-form-registro mt-2">
+                                                </div>
+                                                <div class="col">
+                                                    <input type="file" data-preview-id="preview1" data-position="1" class="form-control btn-input-img" name="img1">
+                                                </div>
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <div class="col imagen-formulario">
+                                                    <img src="/PNGs/image.png" id="preview2" src="#" alt="Preview Image" class="img-form-registro mt-2">
+                                                </div>
+                                                <div class="col">
+                                                    <input type="file"  data-preview-id="preview2" data-position="2" class="form-control btn-input-img" name="img2">
+                                                </div>
+
+                                            </div>
+
+                                            <div class="carousel-item">
+                                                <div class="col imagen-formulario">
+                                                    <img src="/PNGs/image.png" id="preview3" src="#" alt="Preview Image" class="img-form-registro mt-2">
+                                                </div>
+                                                <div class="col">
+                                                    <input type="file" data-preview-id="preview3" data-position="3" class="form-control btn-input-img" name="img3">
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+                                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    </button>
                                 </div>
-                                <div class="col">
-                                    <input type="file" id="inputFile" onchange="previewImage();"
-                                        class="form-control btn-input-img" name="img1">
-                                </div>
-
-
-
-
-
-                                {{-- 
-
-                                <input type="text" placeholder="input img" class="form-control" name="img">
-                                <label class="helpText " for="img">Seleccionar Archivo</label> --}}
-
-
                             </div>
+
+
+
+
 
                             <div class="form-group col-7 ml-auto">
                                 <div class="row">
                                     <!---------- Modelo ------------>
                                     <div class="col-6">
-                                        <input type="text" placeholder="Código completo" class="form-control"
-                                            name="modelo">
+                                        <input type="text" placeholder="Código completo" class="form-control" name="modelo">
                                         <label for="modelo" class="helpText">Modelo</label>
                                     </div>
                                     <!---------- Marca ------------>
                                     <div class="col-6">
-                                        <select name="marca" class="custom-select form-control" id="marca"
-                                            placeholder="Selecciona">
+                                        <select name="marca" class="custom-select form-control" id="marca" placeholder="Selecciona">
                                             <option value="" class="select-option" selected hidden>Selecciona
                                             </option>
                                             <option value="" class="select-option">Volcom</option>
@@ -75,8 +100,7 @@
                                     </div>
                                     <!---------- Categoría ------------>
                                     <div class="col-6">
-                                        <select name="categoria" class="custom-select form-control" id="categoria"
-                                            placeholder="Selecciona">
+                                        <select name="categoria" class="custom-select form-control" id="categoria" placeholder="Selecciona">
                                             <option value="" class="select-option" selected hidden>Selecciona
                                             </option>
                                             <option value="" class="select-option">Tablas</option>
@@ -92,8 +116,7 @@
                                 <div class="row">
                                     <!---------- Tamaño ------------>
                                     <div class="col-6 mr-auto">
-                                        <select name="tamano" class="custom-select form-control" id="tamano"
-                                            placeholder="Selecciona">
+                                        <select name="tamano" class="custom-select form-control" id="tamano" placeholder="Selecciona">
                                             <option value="" class="select-option" selected hidden>Selecciona
                                             </option>
                                             <option value="" class="select-option">XS</option>
@@ -107,8 +130,7 @@
 
                                     <!---------- Precio ------------>
                                     <div class="col-6 ml-auto">
-                                        <input type="text" placeholder="$ 00.00" class="form-control"
-                                            name="precio">
+                                        <input type="text" placeholder="$ 00.00" class="form-control" name="precio">
                                         <label for="precio" class="helpText">Precio</label>
                                     </div>
                                 </div>
@@ -141,8 +163,11 @@
 
     <script>
         function previewImage() {
-            var file = document.getElementById('inputFile').files[0];
-            var preview = document.getElementById('preview');
+            var input = this;
+            var file = input.files[0];
+            var position = input.dataset.position;
+            var previewId = "preview" + position;
+            var preview = document.getElementById(previewId);
             var reader = new FileReader();
 
             reader.addEventListener("load", function() {
@@ -152,5 +177,11 @@
             if (file) {
                 reader.readAsDataURL(file);
             }
+        }
+
+        var inputs = document.getElementsByClassName('btn-input-img');
+
+        for (var i = 0; i < inputs.length; i++) {
+            inputs[i].addEventListener('change', previewImage, false);
         }
     </script>
