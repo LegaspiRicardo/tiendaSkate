@@ -262,6 +262,17 @@ li {
 }
 
 
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: transparent;
+    border: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color:#7d7d7d
+}
+
 
 /* --------TABLAS--------- */
 .tablaProductos{
