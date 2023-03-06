@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('clientes', function (Blueprint $table) {
-            $table->bigIncrements('id');
+            $table->id('id');
             $table->string('nombre');
             $table->string('correo');
             $table->string('clave');
@@ -23,6 +23,7 @@ return new class extends Migration
             $table->integer('numero');
             $table->string('colonia');
             $table->integer('cp');
+            $table->timestamps();
         });
     }
 
