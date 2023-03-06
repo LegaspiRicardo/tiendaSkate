@@ -208,7 +208,27 @@ li {
         background-color:#42943a;
         color:#fafafa;
     }
-
+    
+    .btn-borrar{
+        font-size: 15px;
+        background-color:#a30a0a;
+        color:#fafafa;
+    }
+    .btn-borrar:hover{
+        font-size: 15px;
+        background-color:#670c0c;
+        color:#fafafa;
+    }
+    .btn-editar{
+        font-size: 15px;
+        background-color:#ebd517;
+        color:#fafafa;
+    }
+    .btn-editar:hover{
+        font-size: 15px;
+        background-color:#cbba1b;
+        color:#fafafa;
+    }
     .imagenes-form{
         position: absolute;
         height: 320px;
