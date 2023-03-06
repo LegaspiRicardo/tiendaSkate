@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+
+/*------ SIDEBAR Y NAVBAR con Bootstrap ------*/
+
+    .sidebar {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        /* Behind the navbar */
+        padding: 48px 0 0;
+        /* Height of navbar */
+        box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+        background-color: rgb(98, 118, 87);
+    }
+
+    @media (max-width: 767.98px) {
+        .sidebar {
+            top: 5rem;
+        }
+    }
+
+    .sidebar-sticky {
+        position: relative;
+        top: 0;
+        height: calc(100vh - 48px);
+        padding-top: .5rem;
+        overflow-x: hidden;
+        overflow-y: auto;
+        /* Scrollable contents if viewport is shorter than content. */
+    }
+
+    @supports ((position: -webkit-sticky) or (position: sticky)) {
+        .sidebar-sticky {
+            position: -webkit-sticky;
+            position: sticky;
+        }
+    }
+
+    .sidebar .nav-link {
+        font-weight: 500;
+        color: #333;
+    }
+
+    .sidebar .nav-link .feather {
+        margin-right: 4px;
+        color: #999;
+    }
+
+    .sidebar .nav-link.active {
+        color: #007bff;
+    }
+
+    .sidebar .nav-link:hover .feather,
+    .sidebar .nav-link.active .feather {
+        color: inherit;
+    }
+
+    .sidebar-heading {
+        font-size: .75rem;
+        text-transform: uppercase;
+    }
+
+    /*
+    * Navbar
+    */
+
+    .navbar-brand {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        font-size: 1rem;
+        background-color: rgba(0, 0, 0, .25);
+        box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+    }
+
+    .navbar .navbar-toggler {
+        top: .25rem;
+        right: 1rem;
+    }
+
+    .navbar .form-control {
+        padding: .75rem 1rem;
+        border-width: 0;
+        border-radius: 0;
+    }
+
+    .form-control-dark {
+        color: #fff;
+        background-color: rgba(255, 255, 255, .1);
+        border-color: rgba(255, 255, 255, .1);
+    }
+
+    .form-control-dark:focus {
+        border-color: transparent;
+        box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+    }
+
+
+
+
+
+/* .sidebarLarge{
+    margin: 10% 0 0 20%;
+}
+
+.sidebarSmall{
+    margin: 10% 0 0 2%;
+} */
+
+li {
+    list-style-type: none;
+    opacity: 0.7;
+    padding: 6% 0;
+    text-align: center;
+}
+
+.sidebarA, .sidebarli{
+    color: white;
+    opacity: 0.6;
+}
+
+.sidebarA:hover{
+    color: white;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.sidebarItem {
+    text-decoration: none;
+
+}
+
+.sidebarItem:hover {
+    opacity: 1;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.enlaceTitulo {
+    color: white;
+}
+
+.enlaceTitulo:hover {
+    color: white;
+}
+
+
+
+.registroClienteButon {
+    margin-left: 75%;
+}
+
+.btn-collapse{
+    color:white;
+    font-size: 22px;
+    background-color: transparent;
+    border:none;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.btn-collapse:hover{
+    opacity: 1;
+}
+
+.card-collapse{
+    background-color:#33333349;
+    border: none;
+}
+
+
+/* ----- Formularios ----------*/
+
+
+.helpText{
+    color:#21242681;
+    }
+    
+    .txtNegro{
+        color: #212426;
+    }
+    
+    .form-control::placeholder{
+    opacity: 0.5;
+    font-size: 15px ;
+    }
+    
+    .btn-input-img{
+        position: relative;
+        margin-top: 2%;
+    }
+    
+    .btn-guardar{
+        font-size: 15px;
+        background-color:#7d7d7d;
+        color:#fafafa;
+    }
+    
+    .btn-guardar:hover{
+        
+        background-color:#42943a;
+        color:#fafafa;
+    }
+    
+    .btn-borrar{
+        font-size: 15px;
+        background-color:#a30a0a;
+        color:#fafafa;
+    }
+    .btn-borrar:hover{
+        font-size: 15px;
+        background-color:#670c0c;
+        color:#fafafa;
+    }
+    .btn-editar{
+        font-size: 15px;
+        background-color:#ebd517;
+        color:#fafafa;
+    }
+    .btn-editar:hover{
+        font-size: 15px;
+        background-color:#cbba1b;
+        color:#fafafa;
+    }
+    .imagenes-form{
+        position: absolute;
+        height: 320px;
+    }
+    
+
+.imagen-formulario{
+    height: 280px;
+    width: 295px;
+}
+
+    .img-form-registro{
+        max-width: 100%;
+        border-radius: 5%;
+        margin-bottom: 2%;
+    }
+    
+    .select-option{
+        color: #212426;
+    }
+    
+    .input-descripcion{
+        height: 80px;
+    }
+    
+    .custom-file {
+      overflow: hidden;
+    }
+    
+    .custom-file-input {
+      white-space: nowrap;
+    }
+    
+    .custom-file-label{
+        color: transparent;
+    }
+    
+.btn-registro{
+    width: 45px;
+    align-content: center;
+    font-size: 24px;
+    border-radius: 10px;
+    border: none;
+    background-color: #5d805a;
+    color: white;
+    padding-bottom: 1.5%;
+}
+
+.btn-registro:hover{
+    background-color: #42943a;
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: transparent;
+    border: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+    background-color:#7d7d7d
+}
+
+
+/* --------TABLAS--------- */
+.tablaProductos{
+    overflow-x: auto;
+    max-height: 450px;
+    border: solid #7d7d7d1a;
+    border-radius: 10px;
+}
+.tablaPanel{
+    overflow-x: auto;
+    max-height: 450px;
+    border: solid #7d7d7d1a;
+    border-radius: 10px;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(180, 180, 180); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background:#42943a; 
+  }
+
+
+.iconoTabla{
+    max-width: 18px;
+}
+
+
+.cabezal-tabla{
+    font-size: 22px;
+    background-color:#7d7d7d;
+    color: white;
+    margin-top: 1%;
+    padding: 1% 0 1% 0;
+    text-shadow: 2px 2px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1020px) {
+
+    .bienvenida {
+        font-size: 12px;
+        margin-left: 5%;
+    }
+    .cabezal-tabla-cliente{
+     width: 100%;
+    }
+
+    .callout {
+        padding: 1% 0 0 0;
+        text-align: center;
+    }
+
+    .title-bar {
+        background-color: rgba(68, 84, 59, 0.869);
+    }
+
+
+    .imagen-login-fondo {
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.9;
+        
+    }
+
+    h6{
+        text-align: center;
+        margin-top: 12%;
+    }
+}
