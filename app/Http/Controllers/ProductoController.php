@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Producto;
-use App\Http\Requests\StoreProductoRequest;
-use App\Http\Requests\UpdateProductoRequest;
+// use App\Http\Requests\StoreProductoRequest;
+// use App\Http\Requests\UpdateProductoRequest;
+use Illuminate\Http\Request;
 
 class ProductoController extends Controller
 {
@@ -15,7 +16,7 @@ class ProductoController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.productos.index')->with('producto',Producto::all());
     }
 
     /**
@@ -25,7 +26,8 @@ class ProductoController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.productos.index')->with('producto',Producto::all());
+
     }
 
     /**
@@ -34,9 +36,47 @@ class ProductoController extends Controller
      * @param  \App\Http\Requests\StoreProductoRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreProductoRequest $request)
+    public function store(Request $request)
     {
-        //
+        $producto = new Producto();
+
+        $producto->modelo = $request->modelo;
+        $producto->marca = $request->marca;
+        $producto->precio = $request->precio;
+        $producto->cantidad = $request->cantidad;
+        $producto->color = $request->color;
+        $producto->material = $request->material;
+        $producto->tamano = $request->tamano;
+        $producto->estatus = $request->estatus;
+        $producto->descripcion = $request->descripcion;
+        if($request->hasFile('img1')){
+            $img1= $request->file('img1');
+            $destino='admin/files/productos/';
+            $origen=$img1->getClientOriginalName();
+            $img1->move( $destino,$origen);
+            $producto->img1 = $origen;
+        }
+        if($request->hasFile('img2')){
+            $img2= $request->file('img2');
+            $destino='admin/files/productos/';
+            $origen=$img2->getClientOriginalName();
+            $img2->move( $destino,$origen);
+            $producto->img2 = $origen;
+        }
+        if($request->hasFile('img3')){
+            $img3= $request->file('img3');
+            $destino='admin/files/productos/';
+            $origen=$img3->getClientOriginalName();
+            $img3->move( $destino,$origen);
+            $producto->img3 = $origen;
+        }
+    
+        $producto->save();
+
+
+        
+        return view('admin.productos.index')->with('producto',Producto::all());
+
     }
 
     /**
@@ -45,9 +85,11 @@ class ProductoController extends Controller
      * @param  \App\Models\Producto  $producto
      * @return \Illuminate\Http\Response
      */
-    public function show(Producto $producto)
+    public function show( $id)
     {
-        //
+        $producto=Producto::find($id);
+        return view('admin.productos.show')->with('producto',$producto);
+
     }
 
     /**
@@ -56,9 +98,11 @@ class ProductoController extends Controller
      * @param  \App\Models\Producto  $producto
      * @return \Illuminate\Http\Response
      */
-    public function edit(Producto $producto)
+    public function edit( $id)
     {
-        //
+        $producto=Producto::find($id);
+        return view('admin.productos.edit')->with('producto',$producto);
+
     }
 
     /**
@@ -68,9 +112,50 @@ class ProductoController extends Controller
      * @param  \App\Models\Producto  $producto
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateProductoRequest $request, Producto $producto)
+    public function update(Request $request,  $id)
     {
-        //
+        $producto=Producto::find($id);
+
+        $producto->modelo = $request->modelo;
+        $producto->marca = $request->marca;
+        $producto->precio = $request->precio;
+        $producto->cantidad = $request->cantidad;
+        $producto->color = $request->color;
+        $producto->material = $request->material;
+        $producto->tamano = $request->tamano;
+        $producto->estatus = $request->estatus;
+        $producto->descripcion = $request->descripcion;
+        $producto->img1 = $request->img1;
+      
+
+        if($request->hasFile('img1')){
+            $img1= $request->file('img1');
+            $destino='admin/files/productos/';
+            $origen=$img1->getClientOriginalName();
+            $img1->move( $destino,$origen);
+            unlink('admin/files/brand/'.$producto->img1);
+            $producto->img1 = $origen;
+        }
+        if($request->hasFile('img2')){
+            $img2= $request->file('img2');
+            $destino='admin/files/productos/';
+            $origen=$img2->getClientOriginalName();
+            $img2->move( $destino,$origen);
+            unlink('admin/files/brand/'.$producto->img2);
+            $producto->img2 = $origen;
+        }
+        if($request->hasFile('img3')){
+            $img3= $request->file('img3');
+            $destino='admin/files/productos/';
+            $origen=$img3->getClientOriginalName();
+            $img3->move( $destino,$origen);
+            unlink('admin/files/brand/'.$producto->img3);
+            $producto->img3 = $origen;
+        }
+       
+        $producto->save();
+        return view('admin.productos.index')->with('producto',Producto::all());
+
     }
 
     /**
@@ -79,8 +164,11 @@ class ProductoController extends Controller
      * @param  \App\Models\Producto  $producto
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Producto $producto)
+    public function destroy( $id)
     {
-        //
+        $producto=Producto::find($id);
+        $producto->delete();
+        return view('admin.productos.index')->with('producto',Producto::all());
+
     }
 }

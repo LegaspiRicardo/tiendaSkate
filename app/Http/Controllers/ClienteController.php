@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Cliente;
-
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 class ClienteController extends Controller
 {
@@ -36,7 +36,7 @@ class ClienteController extends Controller
     public function store(Request $request)
     {   
         $cliente = new Cliente();
-        $cliente->id = $request->id;
+
         $cliente->nombre = $request->nombre;
         $cliente->correo = $request->correo;
         $cliente->clave = $request->clave;
@@ -59,7 +59,7 @@ class ClienteController extends Controller
     public function show( $id)
     {
         $cliente=Cliente::find($id);
-            return view('admin.clientes.show')->with('clietne',$cliente);
+            return view('admin.clientes.show')->with('cliente',$cliente);
     }
 
     /**
@@ -71,7 +71,7 @@ class ClienteController extends Controller
     public function edit( $id)
     {
         $cliente=Cliente::find($id);
-        return view('admin.clientes.edit')->with('clietne',$cliente);
+        return view('admin.clientes.edit')->with('cliente',$cliente);
     }
 
     /**
@@ -85,7 +85,7 @@ class ClienteController extends Controller
     {
         $cliente =  Cliente::find($id);
 
-        $cliente->id = $request->id;
+        
         $cliente->nombre = $request->nombre;
         $cliente->correo = $request->correo;
         $cliente->clave = $request->clave;
