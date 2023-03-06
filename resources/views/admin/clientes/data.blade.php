@@ -16,209 +16,30 @@
             <th>Numero</th>
             <th>Colonia</th>
             <th>CP</th>
-            <th></th>
-            <th></th>
+            <th>Editar</th>
+            <th>Borrar</th>
         </tr>
     </thead>
     <!--Table head-->
 
     <!--Table body-->
     <tbody>
+        @foreach ($cliente as $cliente)
         <tr>
-            <th scope="row">4</th>
-            <td class="text-center">Jerry</td>
-            <td>jerryorwitz@gmail.com</td>
-            <td>ItalyMyLove</td>
-            <td>42 5487 4875</td>
-            <td>Hector Chi</td>
-            <td>41</td>
-            <td>Italy Center</td>
-            <td>47859</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
+            <th scope="row">{{ $cliente->id }}</th>
+            <td class="text-center">{{ $cliente->nombre }}</td>
+            <td>{{ $cliente->correo }}</td>
+            <td>{{ $cliente->clave }}</td>
+            <td>{{ $cliente->telefono }}</td>
+            <td>{{ $cliente->calle }}</td>
+            <td>{{ $cliente->numero }}</td>
+            <td>{{ $cliente->colonia }}</td>
+            <td>{{ $cliente->cp }}</td>
+            <td><a class="badge badge-warning" href="{{ url('/clienteAdmin/'. $cliente->id.'/edit')}}"><span class="text-white">Editar</span> <img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
+            <td><a class="badge badge-danger" href="{{ url('/clienteAdmin/'. $cliente->id)}}"><span class="text-white">Borrar</span> <img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
         </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td class="text-center">Jerry</td>
-            <td>jerryorwitz@gmail.com</td>
-            <td>ItalyMyLove</td>
-            <td>42 5487 4875</td>
-            <td>Hector Chi</td>
-            <td>41</td>
-            <td>Italy Center</td>
-            <td>47859</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td class="text-center">Jerry</td>
-            <td>jerryorwitz@gmail.com</td>
-            <td>ItalyMyLove</td>
-            <td>42 5487 4875</td>
-            <td>Hector Chi</td>
-            <td>41</td>
-            <td>Italy Center</td>
-            <td>47859</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td class="text-center">Jerry</td>
-            <td>jerryorwitz@gmail.com</td>
-            <td>ItalyMyLove</td>
-            <td>42 5487 4875</td>
-            <td>Hector Chi</td>
-            <td>41</td>
-            <td>Italy Center</td>
-            <td>47859</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td class="text-center">Jerry</td>
-            <td>jerryorwitz@gmail.com</td>
-            <td>ItalyMyLove</td>
-            <td>42 5487 4875</td>
-            <td>Hector Chi</td>
-            <td>41</td>
-            <td>Italy Center</td>
-            <td>47859</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td class="text-center">Jerry</td>
-            <td>jerryorwitz@gmail.com</td>
-            <td>ItalyMyLove</td>
-            <td>42 5487 4875</td>
-            <td>Hector Chi</td>
-            <td>41</td>
-            <td>Italy Center</td>
-            <td>47859</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td class="text-center">Jerry</td>
-            <td>jerryorwitz@gmail.com</td>
-            <td>ItalyMyLove</td>
-            <td>42 5487 4875</td>
-            <td>Hector Chi</td>
-            <td>41</td>
-            <td>Italy Center</td>
-            <td>47859</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td class="text-center">Jerry</td>
-            <td>jerryorwitz@gmail.com</td>
-            <td>ItalyMyLove</td>
-            <td>42 5487 4875</td>
-            <td>Hector Chi</td>
-            <td>41</td>
-            <td>Italy Center</td>
-            <td>47859</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td class="text-center">Jerry</td>
-            <td>jerryorwitz@gmail.com</td>
-            <td>ItalyMyLove</td>
-            <td>42 5487 4875</td>
-            <td>Hector Chi</td>
-            <td>41</td>
-            <td>Italy Center</td>
-            <td>47859</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td class="text-center">Jerry</td>
-            <td>jerryorwitz@gmail.com</td>
-            <td>ItalyMyLove</td>
-            <td>42 5487 4875</td>
-            <td>Hector Chi</td>
-            <td>41</td>
-            <td>Italy Center</td>
-            <td>47859</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td class="text-center">Jerry</td>
-            <td>jerryorwitz@gmail.com</td>
-            <td>ItalyMyLove</td>
-            <td>42 5487 4875</td>
-            <td>Hector Chi</td>
-            <td>41</td>
-            <td>Italy Center</td>
-            <td>47859</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td class="text-center">Jerry</td>
-            <td>jerryorwitz@gmail.com</td>
-            <td>ItalyMyLove</td>
-            <td>42 5487 4875</td>
-            <td>Hector Chi</td>
-            <td>41</td>
-            <td>Italy Center</td>
-            <td>47859</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td class="text-center">Jerry</td>
-            <td>jerryorwitz@gmail.com</td>
-            <td>ItalyMyLove</td>
-            <td>42 5487 4875</td>
-            <td>Hector Chi</td>
-            <td>41</td>
-            <td>Italy Center</td>
-            <td>47859</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td class="text-center">Jerry</td>
-            <td>jerryorwitz@gmail.com</td>
-            <td>ItalyMyLove</td>
-            <td>42 5487 4875</td>
-            <td>Hector Chi</td>
-            <td>41</td>
-            <td>Italy Center</td>
-            <td>47859</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td class="text-center">Jerry</td>
-            <td>jerryorwitz@gmail.com</td>
-            <td>ItalyMyLove</td>
-            <td>42 5487 4875</td>
-            <td>Hector Chi</td>
-            <td>41</td>
-            <td>Italy Center</td>
-            <td>47859</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
+        @endforeach
+        
 
 
     </tbody>

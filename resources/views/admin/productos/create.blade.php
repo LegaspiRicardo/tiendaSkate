@@ -16,7 +16,8 @@
                     </button>
                 </div>
                 <div class="modal-body mr-2 ml-2 ">
-                    <form data-abide novalidate>
+                    <form data-abide novalidate method="POST" action="/productoAdmin" enctype="multipart/form-data">
+                          @csrf
                         <div class="row">
 
                             <div class="col-5 text-center imagenes-form">
@@ -30,7 +31,7 @@
                                                     <img src="/PNGs/image.png" id="preview1" src="#" alt="Preview Image" class="img-form-registro mt-2">
                                                 </div>
                                                 <div class="col">
-                                                    <input type="file" data-preview-id="preview1" data-position="1" class="form-control btn-input-img" name="img1">
+                                                    <input type="file" data-preview-id="preview1" data-position="1" class="form-control btn-input-img" name="img1" accept="image/*" required>
                                                 </div>
                                             </div>
 
@@ -39,7 +40,7 @@
                                                     <img src="/PNGs/image.png" id="preview2" src="#" alt="Preview Image" class="img-form-registro mt-2">
                                                 </div>
                                                 <div class="col">
-                                                    <input type="file"  data-preview-id="preview2" data-position="2" class="form-control btn-input-img" name="img2">
+                                                    <input type="file"  data-preview-id="preview2" data-position="2" class="form-control btn-input-img" name="img2" accept="image/*" required>
                                                 </div>
 
                                             </div>
@@ -49,7 +50,7 @@
                                                     <img src="/PNGs/image.png" id="preview3" src="#" alt="Preview Image" class="img-form-registro mt-2">
                                                 </div>
                                                 <div class="col">
-                                                    <input type="file" data-preview-id="preview3" data-position="3" class="form-control btn-input-img" name="img3">
+                                                    <input type="file" data-preview-id="preview3" data-position="3" class="form-control btn-input-img" name="img3" accept="image/*" required>
                                                 </div>
 
                                             </div>
@@ -103,10 +104,10 @@
                                         <select name="categoria" class="custom-select form-control" id="categoria" placeholder="Selecciona">
                                             <option value="" class="select-option" selected hidden>Selecciona
                                             </option>
-                                            <option value="" class="select-option">Tablas</option>
-                                            <option value="" class="select-option">Tenis</option>
-                                            <option value="" class="select-option">Scooter</option>
-                                            <option value="" class="select-option">Ropa</option>
+                                            <option value="Tablas" class="select-option">Tablas</option>
+                                            <option value="Tenis" class="select-option">Tenis</option>
+                                            <option value="Scooter" class="select-option">Scooter</option>
+                                            <option value="Ropa" class="select-option">Ropa</option>
                                         </select>
                                         <label for="categoria" class="helpText">Categoría</label>
                                     </div>
@@ -119,11 +120,11 @@
                                         <select name="tamano" class="custom-select form-control" id="tamano" placeholder="Selecciona">
                                             <option value="" class="select-option" selected hidden>Selecciona
                                             </option>
-                                            <option value="" class="select-option">XS</option>
-                                            <option value="" class="select-option">S</option>
-                                            <option value="" class="select-option">M</option>
-                                            <option value="" class="select-option">LG</option>
-                                            <option value="" class="select-option">XLG</option>
+                                            <option value="XS" class="select-option">XS</option>
+                                            <option value="S" class="select-option">S</option>
+                                            <option value="M" class="select-option">M</option>
+                                            <option value="LG" class="select-option">LG</option>
+                                            <option value="XLG" class="select-option">XLG</option>
                                         </select>
                                         <label for="tamano" class="helpText">Tamaño</label>
                                     </div>
@@ -149,12 +150,13 @@
 
                             </div>
                             <br>
-                        </div>
+                        </div> 
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-guardar m-0">+</button>
+                    </div>
                     </form>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-guardar m-0">+</button>
-                </div>
+            
             </div>
         </div>
     </div>

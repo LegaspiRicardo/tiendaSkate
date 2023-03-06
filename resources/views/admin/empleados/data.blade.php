@@ -20,116 +20,20 @@
 
     <!--Table body-->
     <tbody>
+        @foreach ($empleado as $empleado)
         <tr>
-            <th scope="row">4</th>
-            <td>Fernando Cruz</td>
-            <td>f.cruz@gmail.com</td>
-            <td>33 4878 4568</td>
-            <td>Activo</td>
-            <td>Vendedor</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
+            <th scope="row">{{ $empleado->id }}</th>
+            <td class="text-center">{{ $empleado->nombres }}</td>
+            <td>{{ $empleado->correo }}</td>
+            <td>{{ $empleado->telefono }}</td>
+            <td>{{ $empleado->estatus }}</td>
+            <td>{{ $empleado->puesto }}</td>
+          
+            <td><a class="badge badge-warning" href="{{ url('/equipoAdmin/'. $empleado->id.'/edit')}}"><span class="text-white">Editar</span> <img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
+            <td><a class="badge badge-danger" href="{{ url('/equipoAdmin/'. $empleado->id)}}"><span class="text-white">Borrar</span> <img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
         </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td>Fernando Cruz</td>
-            <td>f.cruz@gmail.com</td>
-            <td>33 4878 4568</td>
-            <td>Activo</td>
-            <td>Vendedor</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td>Fernando Cruz</td>
-            <td>f.cruz@gmail.com</td>
-            <td>33 4878 4568</td>
-            <td>Activo</td>
-            <td>Vendedor</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td>Fernando Cruz</td>
-            <td>f.cruz@gmail.com</td>
-            <td>33 4878 4568</td>
-            <td>Activo</td>
-            <td>Vendedor</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td>Fernando Cruz</td>
-            <td>f.cruz@gmail.com</td>
-            <td>33 4878 4568</td>
-            <td>Activo</td>
-            <td>Vendedor</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td>Fernando Cruz</td>
-            <td>f.cruz@gmail.com</td>
-            <td>33 4878 4568</td>
-            <td>Activo</td>
-            <td>Vendedor</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td>Fernando Cruz</td>
-            <td>f.cruz@gmail.com</td>
-            <td>33 4878 4568</td>
-            <td>Activo</td>
-            <td>Vendedor</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td>Fernando Cruz</td>
-            <td>f.cruz@gmail.com</td>
-            <td>33 4878 4568</td>
-            <td>Activo</td>
-            <td>Vendedor</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td>Fernando Cruz</td>
-            <td>f.cruz@gmail.com</td>
-            <td>33 4878 4568</td>
-            <td>Activo</td>
-            <td>Vendedor</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td>Fernando Cruz</td>
-            <td>f.cruz@gmail.com</td>
-            <td>33 4878 4568</td>
-            <td>Activo</td>
-            <td>Vendedor</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
-        <tr>
-            <th scope="row">4</th>
-            <td>Fernando Cruz</td>
-            <td>f.cruz@gmail.com</td>
-            <td>33 4878 4568</td>
-            <td>Activo</td>
-            <td>Vendedor</td>
-            <td><a href=""><img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
-            <td><a href=""><img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
-        </tr>
+        @endforeach
+        
 
 
     </tbody>

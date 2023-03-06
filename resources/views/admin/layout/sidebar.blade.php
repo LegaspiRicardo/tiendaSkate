@@ -32,7 +32,7 @@
 
 
             <li class="sidebarItem col-10 mx-auto text-left">
-                <a href="{{ url('/clientes') }}" class="col-10 mx-auto sidebarA"> 
+                <a href="{{ url('/clienteAdmin') }}" class="col-10 mx-auto sidebarA"> 
                 Clientes 
                 </a>
             </li>

@@ -16,7 +16,8 @@
                         </button>
                     </div>
                     <div class="modal-body ">
-                        <form data-abide novalidate>
+                        <form data-abide novalidate method="POST" action="/clienteAdmin" enctype="multipart/form-data">
+                            @csrf
                             <h5 class="txtNegro">Información personal</h5>
                             <div class="row  mx-auto">
                                 <!-- Nombre y telefono-->
@@ -76,6 +77,10 @@
                                     </div>
                                 </div>
                             </div>
+                            
+                            
+                                              
+                                                    <button type="submit" class="btn btn-guardar m-0">+</button>
                         </form>
                     </div>
 
@@ -83,11 +88,6 @@
 
 
 
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-guardar m-0">+</button>
-
-
-                    </div>
                 </div>
             </div>
         </div>
