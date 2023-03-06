@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\EmpleadoController;
+use App\Http\Controllers\ProductoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,12 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 
-Route::view('/tiendaSkate', 'website/index')->name('tiendaSkate');
+
+Route::view('/', 'website/index')->name('tiendaSkate');
 Route::view('/productos', 'website/productos')->name('productos');
 Route::view('/sesion', 'website/iniciosesion')->name('sesion');
 
@@ -37,7 +37,8 @@ Route::view('/equipo', 'admin/empleados/index')->name('equipo');
 Route::view('/inventario', 'admin/productos/index')->name('inventario');
 
 Route::resource('/clienteAdmin',ClienteController::class);
-
+Route::resource('/equipoAdmin',EmpleadoController::class);
+Route::resource('/productoAdmin',ProductoController::class);
 
 
 
