@@ -125,7 +125,7 @@ class ProductoController extends Controller
         $producto->tamano = $request->tamano;
         $producto->estatus = $request->estatus;
         $producto->descripcion = $request->descripcion;
-        $producto->img1 = $request->img1;
+      
       
 
         if($request->hasFile('img1')){
@@ -133,7 +133,7 @@ class ProductoController extends Controller
             $destino='admin/files/productos/';
             $origen=$img1->getClientOriginalName();
             $img1->move( $destino,$origen);
-            unlink('admin/files/brand/'.$producto->img1);
+            unlink('admin/files/productos/'.$producto->img1);
             $producto->img1 = $origen;
         }
         if($request->hasFile('img2')){
@@ -141,7 +141,7 @@ class ProductoController extends Controller
             $destino='admin/files/productos/';
             $origen=$img2->getClientOriginalName();
             $img2->move( $destino,$origen);
-            unlink('admin/files/brand/'.$producto->img2);
+            unlink('admin/files/productos/'.$producto->img2);
             $producto->img2 = $origen;
         }
         if($request->hasFile('img3')){
@@ -149,7 +149,7 @@ class ProductoController extends Controller
             $destino='admin/files/productos/';
             $origen=$img3->getClientOriginalName();
             $img3->move( $destino,$origen);
-            unlink('admin/files/brand/'.$producto->img3);
+            unlink('admin/files/productos/'.$producto->img3);
             $producto->img3 = $origen;
         }
        
@@ -167,6 +167,9 @@ class ProductoController extends Controller
     public function destroy( $id)
     {
         $producto=Producto::find($id);
+        unlink('admin/files/productos/'.$producto->img1);
+        unlink('admin/files/productos/'.$producto->img2);
+        unlink('admin/files/productos/'.$producto->img3);
         $producto->delete();
         return view('admin.productos.index')->with('producto',Producto::all());
 

@@ -44,6 +44,13 @@ class EmpleadoController extends Controller
         $empleado->estatus = $request->estatus;
         $empleado->telefono = $request->telefono;
         $empleado->puesto = $request->puesto;
+        if($request->hasFile('img')){
+            $img= $request->file('img');
+            $destino='admin/files/empleados/';
+            $origen=$img->getClientOriginalName();
+            $img->move( $destino,$origen);
+            $empleado->img = $origen;
+        }
 
         $empleado->save();
         return view('admin.empleados.index')->with('empleado',Empleado::all());
@@ -88,6 +95,14 @@ class EmpleadoController extends Controller
         $empleado->estatus = $request->estatus;
         $empleado->telefono = $request->telefono;
         $empleado->puesto = $request->puesto;
+        if($request->hasFile('img')){
+            $img= $request->file('img');
+            $destino='admin/files/empleados/';
+            $origen=$img->getClientOriginalName();
+            $img->move( $destino,$origen);
+            unlink('admin/files/empleados/'.$empleado->img);
+            $empleado->img = $origen;
+        }
         
         $empleado->save();
         return view('admin.empleados.index')->with('empleado',Empleado::all());
@@ -102,6 +117,7 @@ class EmpleadoController extends Controller
     public function destroy( $id)
     {
         $empleado=Empleado::find($id);
+        unlink('admin/files/empleados/'.$empleado->img);
         $empleado->delete();
         return view('admin.empleados.index')->with('empleado',Empleado::all());
 
