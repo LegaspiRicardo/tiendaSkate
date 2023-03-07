@@ -10,7 +10,7 @@
 
 
             <li class="sidebarItem col-10 mx-auto text-left">
-                <a href="{{ url('/inventario') }}" class="col-10 mx-auto sidebarA">
+                <a href="{{ url('/productosAdmin') }}" class="col-10 mx-auto sidebarA">
                     Inventario
                 </a>
                 <button class="btn-collapse text-left col-2" type="button" data-toggle="collapse" data-target="#collapse" aria-expanded="false" aria-controls="collapse">
@@ -38,7 +38,7 @@
             </li>
 
             <li class="sidebarItem col-10 mx-auto text-left">
-                <a href="{{ url('/equipo') }}" class="col-10 mx-auto sidebarA"> 
+                <a href="{{ url('/equipoAdmin') }}" class="col-10 mx-auto sidebarA"> 
                     Equipo 
                 </a>
             </li>

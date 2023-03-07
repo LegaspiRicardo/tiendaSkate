@@ -21,6 +21,10 @@
                             <div class="row">
                                 <div class="form-group col-11 mx-auto">
                                     <div class="row">
+                                        <div class="col-6">
+                                            <input type="file"  class="form-control" name="img">
+                                            <label for="img" class="helpText">Selecione su imagen</label>
+                                        </div>
                                         <!---------- Nombre ------------>
                                         <div class="col-6">
                                             <input type="text" placeholder="Nombre completo" class="form-control"

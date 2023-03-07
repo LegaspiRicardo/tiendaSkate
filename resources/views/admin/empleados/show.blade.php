@@ -19,6 +19,11 @@
                             <div class="row">
                                 <div class="form-group col-11 mx-auto">
                                     <div class="row">
+                                        <div class="col-6">
+                                            <img src="/admin/files/empleados/{{ $empleado->img }}" alt="" width="100">
+                                            
+                                            <label for="img" class="helpText">Su imagen</label>
+                                        </div>
                                         <!---------- Nombre ------------>
                                         <div class="col-6">
                                             <input type="text" placeholder="Nombre completo" class="form-control"

@@ -7,6 +7,7 @@
 
         <tr>
             <th>#</th>
+            <th>Imagen</th>
             <th>Nombre</th>
             <th>Correo</th>
             <th>Telefono</th>
@@ -23,6 +24,7 @@
         @foreach ($empleado as $empleado)
         <tr>
             <th scope="row">{{ $empleado->id }}</th>
+            <td><img src="/admin/files/empleados/{{ $empleado->img }}" alt="" width="100"></td>
             <td class="text-center">{{ $empleado->nombres }}</td>
             <td>{{ $empleado->correo }}</td>
             <td>{{ $empleado->telefono }}</td>

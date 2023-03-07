@@ -1,23 +1,21 @@
-    <!-- Buttons trigger modal PRODUCTOS -->
-    <button type="button" class="btn-registro" data-toggle="modal" data-target="#productoModal">
-        +
-    </button>
+ 
+
+    @extends('admin.layout.plantilla')
+
+    @section ('titulo', 'Clientes tienda Skate')
+    
+    @section('main')
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            <h2 class="h2">Productos</h2>
+        </div>
 
 
+                        <h4 class="text-center txtNegro">Editar</h4>
 
-    <!-- Modal Producto-->
-    <div class="modal fade" id="productoModal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content ">
-                <div class="modal-header text-center">
-                    <h4 class="text-center ml-auto txtNegro">Registrar producto </h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body mr-2 ml-2 ">
-                    <form data-abide novalidate method="POST" action="/productoAdmin" enctype="multipart/form-data">
-                          @csrf
+                    <form data-abide novalidate method="POST" action="/productoAdmin/{{ $producto->id}}"" enctype="multipart/form-data">
+                        @csrf
+                        @method('PUT')
                         <div class="row">
 
                             <div class="col-5 text-center imagenes-form">
@@ -28,7 +26,7 @@
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
                                                 <div class="col imagen-formulario">
-                                                    <img src="/PNGs/image.png" id="preview1" src="#" alt="Preview Image" class="img-form-registro mt-2">
+                                                    <img src="/admin/files/productos/{{ $producto->img1 }}" id="preview1" src="#" alt="Preview Image" class="img-form-registro mt-2">
                                                 </div>
                                                 <div class="col">
                                                     <input type="file" data-preview-id="preview1" data-position="1" class="form-control btn-input-img" name="img1" accept="image/*" required>
@@ -37,7 +35,7 @@
 
                                             <div class="carousel-item">
                                                 <div class="col imagen-formulario">
-                                                    <img src="/PNGs/image.png" id="preview2" src="#" alt="Preview Image" class="img-form-registro mt-2">
+                                                    <img src="/admin/files/productos/{{ $producto->img2 }}" id="preview2" src="#" alt="Preview Image" class="img-form-registro mt-2">
                                                 </div>
                                                 <div class="col">
                                                     <input type="file"  data-preview-id="preview2" data-position="2" class="form-control btn-input-img" name="img2" accept="image/*" required>
@@ -47,7 +45,7 @@
 
                                             <div class="carousel-item">
                                                 <div class="col imagen-formulario">
-                                                    <img src="/PNGs/image.png" id="preview3" src="#" alt="Preview Image" class="img-form-registro mt-2">
+                                                    <img src="/admin/files/productos/{{ $producto->img3 }}" id="preview3" src="#" alt="Preview Image" class="img-form-registro mt-2">
                                                 </div>
                                                 <div class="col">
                                                     <input type="file" data-preview-id="preview3" data-position="3" class="form-control btn-input-img" name="img3" accept="image/*" required>
@@ -76,14 +74,13 @@
                                 <div class="row">
                                     <!---------- Modelo ------------>
                                     <div class="col-6">
-                                        <input type="text" placeholder="Código completo" class="form-control" name="modelo">
+                                        <input type="text" placeholder="Código completo" class="form-control" name="modelo" value="{{ $producto->modelo }}">
                                         <label for="modelo" class="helpText">Modelo</label>
                                     </div>
                                     <!---------- Marca ------------>
                                     <div class="col-6">
-                                        <select name="marca" class="custom-select form-control" id="marca" placeholder="Selecciona">
-                                            <option value="" class="select-option" selected hidden>Selecciona
-                                            </option>
+                                        <select name="marca" class="custom-select form-control" id="marca" placeholder="{{ $producto->marca }}">
+                                            
                                             <option value="" class="select-option">Volcom</option>
                                             <option value="" class="select-option">Antifashion</option>
                                             <option value="" class="select-option">DC</option>
@@ -96,12 +93,12 @@
                                 <div class="row">
                                     <!---------- Material ------------>
                                     <div class="col-6 ">
-                                        <input type="text" class="form-control" name="material">
+                                        <input type="text" class="form-control" name="material" value="{{ $producto->material }}">
                                         <label for="material" class="helpText">Material</label>
                                     </div>
                                     <!---------- Categoría ------------>
                                     <div class="col-6">
-                                        <select name="categoria" class="custom-select form-control" id="categoria" placeholder="Selecciona">
+                                        <select name="categoria" class="custom-select form-control" id="categoria" placeholder="{{ $producto->categoria }}">
                                           
                                             <option value="Tablas" class="select-option">Tablas</option>
                                             <option value="Tenis" class="select-option">Tenis</option>
@@ -116,7 +113,7 @@
                                 <div class="row">
                                     <!---------- Tamaño ------------>
                                     <div class="col-6 mr-auto">
-                                        <select name="tamano" class="custom-select form-control" id="tamano" placeholder="Selecciona">
+                                        <select name="tamano" class="custom-select form-control" id="tamano" placeholder="{{ $producto->tamano }}">
                                          
                                             <option value="XS" class="select-option">XS</option>
                                             <option value="S" class="select-option">S</option>
@@ -129,19 +126,18 @@
 
                                     <!---------- Precio ------------>
                                     <div class="col-6 ml-auto">
-                                        <input type="number" placeholder="$ 00.00" class="form-control" name="precio">
+                                        <input type="number" placeholder="$ 00.00" class="form-control" name="precio" value="{{ $producto->precio }}">
                                         <label for="precio" class="helpText">Precio</label>
                                     </div>
                                       <!---------- Precio ------------>
                                       <div class="col-6 ml-auto">
-                                        <input type="cantidad" class="form-control" name="cantidad">
+                                        <input type="cantidad" class="form-control" name="cantidad" value="{{ $producto->cantidad }}">
                                         <label for="cantidad" class="helpText">Cantidad</label>
                                     </div>
                                     <div class="col-6 ml-auto">
                                         <select name="estatus" class="custom-select form-control" id="estatus"
-                                        placeholder="Selecciona">
-                                        <option value="" class="select-option" selected hidden>Selecciona
-                                        </option>
+                                        placeholder="{{ $producto->estatus }}">
+                                       
                                         <option value="existencia" class="select-option">Existencia</option>
                                         <option value="sinExistencia" class="select-option">Sin existencia</option>
                                     </select>
@@ -152,28 +148,25 @@
 
 
                                 <div class="col-3 mx-auto mt-2">
-                                    <input type="color" class="form-control" name="color">
+                                    <input type="color" class="form-control" name="color" value="{{ $producto->color }}">
                                     <label for="color" class="helpText">Color</label>
                                 </div>
                             </div>
 
 
                             <div class="col-10 mx-auto mt-4">
-                                <textarea class="form-control" name="descripcion" rows="3"></textarea>
+                                <textarea class="form-control" name="descripcion" rows="3" placeholder="{{ $producto->descripcion }}"></textarea>
                                 <label for="descripcion" class="helpText">Descripción</label>
 
                             </div>
                             <br>
                         </div> 
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-guardar m-0">+</button>
+                        <button type="submit" class="btn btn-editar m-0">!</button>
                     </div>
                     </form>
-                </div>
-            
-            </div>
-        </div>
-    </div>
+                </main>
+                @endsection
 
 
 
