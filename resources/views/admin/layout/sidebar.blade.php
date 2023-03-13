@@ -8,9 +8,20 @@
                 </a>
             </li>
 
+            <li class="sidebarItem col-10 mx-auto text-left">
+                <a href="{{ url('/clienteAdmin') }}" class="col-10 mx-auto sidebarA"> 
+                Clientes 
+                </a>
+            </li>
 
             <li class="sidebarItem col-10 mx-auto text-left">
-                <a href="{{ url('/productosAdmin') }}" class="col-10 mx-auto sidebarA">
+                <a href="{{ url('/equipoAdmin') }}" class="col-10 mx-auto sidebarA"> 
+                    Equipo 
+                </a>
+            </li>
+
+            <li class="sidebarItem col-10 mx-auto text-left">
+                <a href="{{ url('/productoAdmin') }}" class="col-10 mx-auto sidebarA">
                     Inventario
                 </a>
                 <button class="btn-collapse text-left col-2" type="button" data-toggle="collapse" data-target="#collapse" aria-expanded="false" aria-controls="collapse">
@@ -23,6 +34,10 @@
                     <a href="{{ url('/inventarioTenis') }}" class="col-10 mx-auto sidebarA"><li class="text-center sidebarli"> Tenis </li></a>
                     <a href="{{ url('/inventarioTablas') }}" class="col-10 mx-auto sidebarA"><li class="text-center sidebarli"> Tablas </li></a>
                     <a href="{{ url('/inventarioRopa') }}" class="col-10 mx-auto sidebarA"><li class="text-center sidebarli"> Ropa </li></a>
+                    <a href="{{ url('/inventarioRopa') }}" class="col-10 mx-auto sidebarA"><li class="text-center sidebarli"> Ropa </li></a>
+                    <hr>
+                    <a href="{{ url('/inventarioRopa') }}" class="col-10 mx-auto sidebarA"><li class="text-center sidebarli"> Categorias </li></a>
+                    <a href="{{ url('/marcas') }}" class="col-10 mx-auto sidebarA"><li class="text-center sidebarli"> Marcas </li></a>
                 </div>
             </div>
 
@@ -31,17 +46,6 @@
 
 
 
-            <li class="sidebarItem col-10 mx-auto text-left">
-                <a href="{{ url('/clienteAdmin') }}" class="col-10 mx-auto sidebarA"> 
-                Clientes 
-                </a>
-            </li>
-
-            <li class="sidebarItem col-10 mx-auto text-left">
-                <a href="{{ url('/equipoAdmin') }}" class="col-10 mx-auto sidebarA"> 
-                    Equipo 
-                </a>
-            </li>
         </ul>
     </div>
 </nav>

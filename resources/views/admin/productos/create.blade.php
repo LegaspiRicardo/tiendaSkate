@@ -17,7 +17,7 @@
                 </div>
                 <div class="modal-body mr-2 ml-2 ">
                     <form data-abide novalidate method="POST" action="/productoAdmin" enctype="multipart/form-data">
-                          @csrf
+                        @csrf
                         <div class="row">
 
                             <div class="col-5 text-center imagenes-form">
