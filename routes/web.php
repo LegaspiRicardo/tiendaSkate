@@ -34,6 +34,7 @@ Route::view('/inventarioTablas', 'admin/tablas')->name('inventarioTablas');
 
 Route::view('/clientes', 'admin/clientes/index')->name('clientes');
 Route::view('/equipo', 'admin/empleados/index')->name('equipo');
+Route::view('/marcas', 'admin/marcas/index')->name('marcas');
 Route::view('/inventario', 'admin/productos/index')->name('inventario');
 
 Route::resource('/clienteAdmin',ClienteController::class);
