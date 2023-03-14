@@ -49,7 +49,7 @@ class MarcaController extends Controller
                 $imagen->move( $destino,$origen);
                 $marca->imagen = $origen;
             }
-        $marca->descripcion = $request->descripcion;
+        $marca->texto = $request->texto;
         $marca->save();
 
         
@@ -68,8 +68,8 @@ class MarcaController extends Controller
     {
         $marca=Marca::find($id);
 
-        return view('admin.marcas.index')
-        ->with('marca',Marca::all());
+        return view('admin.marcas.show')
+        ->with('marca', $marca);
     }
 
     /**
@@ -81,8 +81,8 @@ class MarcaController extends Controller
     public function edit($id)
     {
         $marca=Marca::find($id);
-        return view('admin.marcas.index')
-        ->with('marca',Marca::all());
+        return view('admin.marcas.edit')
+        ->with('marca',$marca);
     }
 
     /**
@@ -105,7 +105,7 @@ class MarcaController extends Controller
                 unlink('admin/files/marcas/'.$marca->imagen);
                 $marca->imagen = $origen;
             }
-        $marca->descripcion = $request->descripcion;
+        $marca->texto = $request->texto;
         $marca->save();
 
         return view('admin.marcas.index')
