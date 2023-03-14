@@ -16,7 +16,7 @@
                         </button>
                     </div>
                     <div class="modal-body mr-2 ml-2 ">
-                        <form data-abide novalidate="POST" action="/marcaAdmin" enctype="multipart/form-data">
+                        <form data-abide novalidate="POST" action="/marcasAdmin" enctype="multipart/form-data">
                             @csrf
                             <div class="row">
                                 <div class="col-6 mr-auto text-center ">
@@ -24,7 +24,7 @@
                                             <img src="/PNGs/image.png" id="preview1" src="#" alt="Preview Image" class="img-form-registro mt-2">
                                         </div>
                                         <div class="col">
-                                            <input type="file" data-preview-id="preview1" data-position="1" class="form-control btn-input-img" name="img1" accept="image/*" required>
+                                            <input type="file" data-preview-id="preview1" data-position="1" class="form-control btn-input-img" name="imagen" accept="image/*" required>
                                         </div>
                                     <label class="helpText " for="img">Seleccionar Archivo</label>
                                 </div>
@@ -37,10 +37,11 @@
                                 </div>
                                 <br>
                             </div>
+
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-guardar m-0">+</button>
+                            </div>
                         </form>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-guardar m-0">+</button>
                     </div>
                 </div>
             </div>

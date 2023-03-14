@@ -14,7 +14,7 @@
         </div>
 
         <div class="col-10 mx-auto tablaProductos">
-         
+            @include ('admin.marcas.data')
         </div>
 
     </main>
