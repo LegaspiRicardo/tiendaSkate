@@ -251,6 +251,11 @@ li {
         margin-bottom: 2%;
     }
     
+
+    .img-form-actualizar{
+        max-width: 60%;
+    }
+    
     .select-option{
         color: #212426;
     }
@@ -353,9 +358,15 @@ li {
 }
 
 
+.titulo-columna-marca{
+    color: white;
+}
 
 
-
+.imagen-tabla-marcas{
+    width: 60px;
+    
+}
 
 
 
