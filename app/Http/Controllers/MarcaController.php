@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Marca;
-use App\Http\Requests\StoreMarcaRequest;
-use App\Http\Requests\UpdateMarcaRequest;
+// use App\Http\Requests\StoreMarcaRequest;
+// use App\Http\Requests\UpdateMarcaRequest;
+use Illuminate\Http\Request;
 
 class MarcaController extends Controller
 {
@@ -15,7 +16,8 @@ class MarcaController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.marcas.index')
+        ->with('marca',Marca::all());
     }
 
     /**
@@ -25,7 +27,8 @@ class MarcaController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.marcas.index')
+        ->with('marca',Marca::all());
     }
 
     /**
@@ -34,9 +37,25 @@ class MarcaController extends Controller
      * @param  \App\Http\Requests\StoreMarcaRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreMarcaRequest $request)
+    public function store(Request $request)
     {
-        //
+        $marca = new Marca();
+        $marca->nombre = $request->nombre;
+        if($request->hasFile('imagen'))
+            {
+                $imagen= $request->file('imagen');
+                $destino='admin/files/marcas/';
+                $origen=$imagen->getClientOriginalName();
+                $imagen->move( $destino,$origen);
+                $marca->imagen = $origen;
+            }
+        $marca->descripcion = $request->descripcion;
+        $marca->save();
+
+        
+
+        return view('admin.marcas.index')
+        ->with('marca',Marca::all());
     }
 
     /**
@@ -45,9 +64,12 @@ class MarcaController extends Controller
      * @param  \App\Models\Marca  $marca
      * @return \Illuminate\Http\Response
      */
-    public function show(Marca $marca)
+    public function show($id)
     {
-        //
+        $marca=Marca::find($id);
+
+        return view('admin.marcas.index')
+        ->with('marca',Marca::all());
     }
 
     /**
@@ -56,9 +78,11 @@ class MarcaController extends Controller
      * @param  \App\Models\Marca  $marca
      * @return \Illuminate\Http\Response
      */
-    public function edit(Marca $marca)
+    public function edit($id)
     {
-        //
+        $marca=Marca::find($id);
+        return view('admin.marcas.index')
+        ->with('marca',Marca::all());
     }
 
     /**
@@ -68,9 +92,24 @@ class MarcaController extends Controller
      * @param  \App\Models\Marca  $marca
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateMarcaRequest $request, Marca $marca)
+    public function update(Request $request, $id)
     {
-        //
+        $marca = Marca::find($id);
+        $marca->nombre = $request->nombre;
+        if($request->hasFile('imagen'))
+            {
+                $imagen= $request->file('imagen');
+                $destino='admin/files/marcas/';
+                $origen=$imagen->getClientOriginalName();
+                $imagen->move( $destino,$origen);
+                unlink('admin/files/marcas/'.$marca->imagen);
+                $marca->imagen = $origen;
+            }
+        $marca->descripcion = $request->descripcion;
+        $marca->save();
+
+        return view('admin.marcas.index')
+        ->with('marca',Marca::all());
     }
 
     /**
@@ -79,8 +118,14 @@ class MarcaController extends Controller
      * @param  \App\Models\Marca  $marca
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Marca $marca)
+    public function destroy($id)
     {
-        //
+        $marca= Marca::find($id);
+        unlink('admin/files/marcas/'. $marca->imagen);
+        $marca->delete();
+
+        
+        return view('admin.marcas.index')
+        ->with('marca',Marca::all());
     }
 }
