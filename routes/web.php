@@ -4,6 +4,7 @@ use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\EmpleadoController;
 use App\Http\Controllers\ProductoController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MarcaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,12 +35,13 @@ Route::view('/inventarioTablas', 'admin/tablas')->name('inventarioTablas');
 
 Route::view('/clientes', 'admin/clientes/index')->name('clientes');
 Route::view('/equipo', 'admin/empleados/index')->name('equipo');
-Route::view('/marcas', 'admin/marcas/index')->name('marcas');
+//Route::view('/marcas', 'admin/marcas/index')->name('marcas');
 Route::view('/inventario', 'admin/productos/index')->name('inventario');
 
 Route::resource('/clienteAdmin',ClienteController::class);
 Route::resource('/equipoAdmin',EmpleadoController::class);
 Route::resource('/productoAdmin',ProductoController::class);
+Route::resource('/marcasAdmin',MarcaController::class);
 
 
 
