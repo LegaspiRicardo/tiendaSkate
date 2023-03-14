@@ -20,7 +20,7 @@ return new class extends Migration
             $table->integer('telefono')->nullable();
             $table->string('estatus')->nullable();
             $table->string('puesto');
-            $table->string('img1', 255);
+            $table->string('img', 255);
             $table->timestamps();
         });
     }
