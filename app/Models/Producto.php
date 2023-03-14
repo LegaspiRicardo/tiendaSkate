@@ -23,6 +23,11 @@ class Producto extends Model
         return $this->belongsToMany(Categoria::class);
     }
 
+    public function marcas()
+    {
+        return $this->belongsToMany(Marca::class);
+    }
+
 
     public function empleados()
     {

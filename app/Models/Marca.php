@@ -7,5 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Marca extends Model
 {
+
+    public function productos()
+    {
+        return $this->belongsToMany(Producto::class);
+    }
+    
     use HasFactory;
 }
