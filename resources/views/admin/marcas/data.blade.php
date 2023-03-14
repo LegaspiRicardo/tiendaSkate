@@ -3,13 +3,12 @@
 
     <!--Table head-->
     <thead>
-    <h3 class="text-center cabezal-tabla m-0">Marcas  </h3>
 
-        <tr>
-            <th>#</th>
-            <th>Marca</th>
-            <th>Descripción</th>
-            <th>Imagen</th>
+        <tr class="cabezal-tabla sticky-top">
+            <th class="titulo-columna-marca">#</th>
+            <th class="text-center titulo-columna-marca">Marca</th>
+            <th class="text-center titulo-columna-marca">Imagen</th>
+            <th class="text-center titulo-columna-marca">Descripción</th>
             <th></th>
             <th></th>
         </tr>
@@ -23,8 +22,8 @@
     <tr>
         <th scope="row">{{ $marca->id }}</th>
         <td class="text-center">{{ $marca->nombre }}</td>
-        <td>{{ $marca->texto }}</td>
-        <td><img src="/admin/files/marcas/{{ $marca->imagen }}" alt="" width="100"></td>
+        <td class="text-center"><img src="/admin/files/marcas/{{ $marca->imagen }}" alt="" class="imagen-tabla-marcas"></td>
+        <td class="text-center">{{ $marca->texto }}</td>
         <td><a class="badge badge-warning" href="{{ url('/marcasAdmin/'. $marca->id.'/edit')}}"><span class="text-white">Editar</span> <img src="PNGs/editar.png" class="iconoTabla" alt=""></a></td>
         <td><a class="badge badge-danger" href="{{ url('/marcasAdmin/'. $marca->id)}}"><span class="text-white">Borrar</span> <img src="PNGs/delete.png" class="iconoTabla" alt=""></a></td>
     </tr>

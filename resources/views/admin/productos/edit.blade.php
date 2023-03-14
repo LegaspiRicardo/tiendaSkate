@@ -13,7 +13,7 @@
 
                         <h4 class="text-center txtNegro">Editar</h4>
 
-                    <form data-abide novalidate method="POST" action="/productoAdmin/{{ $producto->id}}"" enctype="multipart/form-data">
+                    <form data-abide novalidate method="POST" action="/productoAdmin/{{ $producto->id}}" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
                         <div class="row">
@@ -155,14 +155,14 @@
 
 
                             <div class="col-10 mx-auto mt-4">
-                                <textarea class="form-control" name="descripcion" rows="3" placeholder="{{ $producto->descripcion }}"></textarea>
+                                <textarea class="form-control" name="descripcion" rows="3" >{{ $producto->descripcion }}</textarea>
                                 <label for="descripcion" class="helpText">Descripción</label>
 
                             </div>
                             <br>
                         </div> 
                     <div class="modal-footer">
-                        <button type="submit" class="btn btn-editar m-0">!</button>
+                        <button type="submit" class="btn btn-editar m-0">Editar producto</button>
                     </div>
                     </form>
                 </main>

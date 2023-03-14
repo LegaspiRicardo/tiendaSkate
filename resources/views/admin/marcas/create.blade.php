@@ -16,7 +16,7 @@
                         </button>
                     </div>
                     <div class="modal-body mr-2 ml-2 ">
-                        <form data-abide novalidate="POST" action="/marcasAdmin" enctype="multipart/form-data">
+                        <form data-abide novalidate method="POST" action="/marcasAdmin" enctype="multipart/form-data">
                             @csrf
                             <div class="row">
                                 <div class="col-6 mr-auto text-center ">
