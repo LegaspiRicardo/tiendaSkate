@@ -34,8 +34,8 @@
                 <br>
             </div>
 
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-borrar m-0">+</button>
+            <div class="modal-footer ">
+                <button type="submit" class="btn mx-auto btn-borrar m-0">Eliminar marca</button>
             </div>
         </form>
     </main>

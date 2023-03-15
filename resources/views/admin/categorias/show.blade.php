@@ -10,17 +10,12 @@
         </div>
 
 
-        <h4 class="text-center txtNegro">Editar</h4>
-
-
-
-
         <form data-abide novalidate method="POST" action="/categoriasAdmin/{{$categoria->id}}" enctype="multipart/form-data">
             @csrf
             @method('DELETE')
             <div class="row">
                 <div class="col-6 mr-auto text-center ">
-                    <div class="col imagen-formulario-chiquita">
+                    <div class="mx-auto imagen-formulario-chiquita">
                         <img src="/admin/files/categorias/{{$categoria->img}}" id="preview1" src="#" alt="Preview Image"
                             class="img-form-registro mt-2">
                     </div>
@@ -28,14 +23,14 @@
                     <label class="helpText " for="img">Imagen previa</label>
                 </div>
                 <div class="col-6 ml-auto  ">
-                    <input type="text" class="form-control" name="nombre" value="{{$categoria->nombre}}" readonly>
-                    <label for="nombre" class="helpText mb-4">Titulo</label>
+                    <label for="nombre" class="helpText mb-0">Titulo</label>
+                    <input type="text" class="form-control col-6" name="nombre" value="{{$categoria->nombre}}" readonly>
                 </div>
                 <br>
             </div>
 
             <div class="modal-footer">
-                <button type="submit" class="btn btn-guardar m-0">Eliminar </button>
+                <button type="submit" class="btn mx-auto btn-borrar m-0">Eliminar categoria </button>
             </div>
         </form>
 

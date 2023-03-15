@@ -9,62 +9,62 @@
             <h2 class="h2">Editar categoria</h2>
         </div>
 
-
-        <h4 class="text-center txtNegro">Editar</h4>
-
-
-
-
-        <form data-abide novalidate method="POST" action="/categoriasAdmin/{{$categoria->id}}" enctype="multipart/form-data">
+        <form data-abide novalidate method="POST" action="/categoriasAdmin/{{ $categoria->id }}"
+            enctype="multipart/form-data">
             @csrf
             @method('PUT')
             <div class="row">
                 <div class="col-6 mr-auto text-center ">
-                    <div class="col imagen-formulario-chiquita">
-                        <img src="/admin/files/categorias/{{$categoria->img}}" id="preview1" src="#" alt="Preview Image"
-                            class="img-form-registro mt-2">
+                    <div class="mx-auto imagen-formulario-chiquita">
+                        <img src="/admin/files/categorias/{{ $categoria->img }}" id="preview1" src="#"
+                            alt="Preview Image" class="img-form-registro mt-2">
                     </div>
-                    <div class="col">
-                        <input type="file" data-preview-id="preview1" data-position="1" class="form-control btn-input-img" name="img" accept="image/*" required>
-                    </div>
-                    <label class="helpText " for="img">Seleccionar Archivo</label>
+                    <label class="helpText " for="img">Imagen prevía</label>
                 </div>
-                <div class="col-6 ml-auto  ">
-                    <input type="text" class="form-control" name="nombre" value="{{$categoria->nombre}}">
-                    <label for="nombre" class="helpText mb-4">Titulo</label>
+
+                <div class="col-6 ml-auto">
+                    <div class="col-6 mr-auto ">
+                        <label for="nombre" class="helpText mb-0">Titulo</label>
+                        <input type="text" class="form-control" name="nombre" value="{{ $categoria->nombre }}">
+                    </div>
+
+                    <div class="col-8 mr-auto mt-5">
+                        <label for="img" class="helpText mb-0">Imagen</label>
+                        <input type="file" data-preview-id="preview1" data-position="1" class="form-control btn-input-img mt-2" name="img" accept="image/*" required>
+                    </div>
                 </div>
                 <br>
             </div>
 
             <div class="modal-footer">
-                <button type="submit" class="btn btn-guardar m-0">+</button>
+                <button type="submit" class="btn mx-auto btn-editar m-0 mx-auto">Editar categoria</button>
             </div>
         </form>
 
-@endsection
+    @endsection
 
 
-        <script>
-            function previewImage() {
-                var input = this;
-                var file = input.files[0];
-                var position = input.dataset.position;
-                var previewId = "preview" + position;
-                var preview = document.getElementById(previewId);
-                var reader = new FileReader();
+    <script>
+        function previewImage() {
+            var input = this;
+            var file = input.files[0];
+            var position = input.dataset.position;
+            var previewId = "preview" + position;
+            var preview = document.getElementById(previewId);
+            var reader = new FileReader();
 
-                reader.addEventListener("load", function() {
-                    preview.src = reader.result;
-                }, false);
+            reader.addEventListener("load", function() {
+                preview.src = reader.result;
+            }, false);
 
-                if (file) {
-                    reader.readAsDataURL(file);
-                }
+            if (file) {
+                reader.readAsDataURL(file);
             }
+        }
 
-            var inputs = document.getElementsByClassName('btn-input-img');
+        var inputs = document.getElementsByClassName('btn-input-img');
 
-            for (var i = 0; i < inputs.length; i++) {
-                inputs[i].addEventListener('change', previewImage, false);
-            }
-        </script>
+        for (var i = 0; i < inputs.length; i++) {
+            inputs[i].addEventListener('change', previewImage, false);
+        }
+    </script>

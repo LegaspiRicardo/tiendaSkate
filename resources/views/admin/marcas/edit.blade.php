@@ -11,7 +11,6 @@
             </div>
 
 
-            <h4 class="text-center txtNegro">Editar</h4>
 
 
             <form data-abide novalidate method="POST" action="/marcasAdmin/{{ $marca->id }}" enctype="multipart/form-data">
@@ -39,7 +38,7 @@
                 </div>
 
                 <div class="modal-footer">
-                    <button type="submit" class="btn btn-guardar m-0">+</button>
+                    <button type="submit" class="btn mx-auto btn-editar m-0">Editar Marca</button>
                 </div>
             </form>
         </main>
