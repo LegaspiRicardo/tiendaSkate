@@ -194,7 +194,7 @@ li {
     
     .btn-input-img{
         position: relative;
-        margin-top: 2%;
+        margin-top: 5%;
     }
     
     .btn-guardar{
@@ -241,14 +241,21 @@ li {
 }
 
 .imagen-formulario-chiquita{
-    height: 180px;
-    width: 295px;
+    max-height: 280px;
+    max-width: 295px;
+    overflow: hidden;
 }
 
     .img-form-registro{
         max-width: 100%;
         border-radius: 5%;
         margin-bottom: 2%;
+    }
+
+
+    .img-form-registro-categoria{
+        width: 80%;
+        border-radius: 5%;
     }
     
 
