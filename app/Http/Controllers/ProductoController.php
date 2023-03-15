@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Producto;
+use App\Models\Marca;
+use App\Models\Categoria;
 // use App\Http\Requests\StoreProductoRequest;
 // use App\Http\Requests\UpdateProductoRequest;
 use Illuminate\Http\Request;
@@ -16,7 +18,10 @@ class ProductoController extends Controller
      */
     public function index()
     {
-        return view('admin.productos.index')->with('producto',Producto::all());
+        return view('admin.productos.index')
+        ->with('producto',Producto::all())
+        ->with('marca',Marca::all())
+        ->with('categoria',Categoria::all());
     }
 
     /**
@@ -26,7 +31,10 @@ class ProductoController extends Controller
      */
     public function create()
     {
-        return view('admin.productos.index')->with('producto',Producto::all());
+        return view('admin.productos.index')
+        ->with('producto',Producto::all())
+        ->with('marca',Marca::all())
+        ->with('categoria',Categoria::all());
 
     }
 
@@ -43,6 +51,7 @@ class ProductoController extends Controller
         $producto->modelo = $request->modelo;
         $producto->marca = $request->marca;
         $producto->precio = $request->precio;
+        $producto->categoria = $request->categoria;
         $producto->cantidad = $request->cantidad;
         $producto->color = $request->color;
         $producto->material = $request->material;
@@ -75,7 +84,10 @@ class ProductoController extends Controller
 
 
         
-        return view('admin.productos.index')->with('producto',Producto::all());
+        return view('admin.productos.index')
+        ->with('producto',Producto::all())
+        ->with('marca',Marca::all())
+        ->with('categoria',Categoria::all());
 
     }
 
@@ -88,7 +100,8 @@ class ProductoController extends Controller
     public function show( $id)
     {
         $producto=Producto::find($id);
-        return view('admin.productos.show')->with('producto',$producto);
+        return view('admin.productos.show')
+        ->with('producto',$producto);
 
     }
 
@@ -101,7 +114,8 @@ class ProductoController extends Controller
     public function edit( $id)
     {
         $producto=Producto::find($id);
-        return view('admin.productos.edit')->with('producto',$producto);
+        return view('admin.productos.edit')
+        ->with('producto',$producto);
 
     }
 
@@ -119,6 +133,7 @@ class ProductoController extends Controller
         $producto->modelo = $request->modelo;
         $producto->marca = $request->marca;
         $producto->precio = $request->precio;
+        $producto->categoria = $request->categoria;
         $producto->cantidad = $request->cantidad;
         $producto->color = $request->color;
         $producto->material = $request->material;
@@ -154,7 +169,10 @@ class ProductoController extends Controller
         }
        
         $producto->save();
-        return view('admin.productos.index')->with('producto',Producto::all());
+        return view('admin.productos.index')
+        ->with('producto',Producto::all())
+        ->with('marca',Marca::all())
+        ->with('categoria',Categoria::all());
 
     }
 
@@ -171,7 +189,10 @@ class ProductoController extends Controller
         unlink('admin/files/productos/'.$producto->img2);
         unlink('admin/files/productos/'.$producto->img3);
         $producto->delete();
-        return view('admin.productos.index')->with('producto',Producto::all());
+        return view('admin.productos.index')
+        ->with('producto',Producto::all())
+        ->with('marca',Marca::all())
+        ->with('categoria',Categoria::all());
 
     }
 }
