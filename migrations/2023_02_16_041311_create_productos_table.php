@@ -16,8 +16,9 @@ return new class extends Migration
         Schema::create('productos', function (Blueprint $table) {
             $table->id();
             $table->string('modelo', 255);
-            $table->string('marca', 255)->nullable();
+            $table->unsignedBigInteger('marca');
             $table->integer('precio');
+            $table->unsignedBigInteger('categoria');
             $table->integer('cantidad');
             $table->string('color')->nullable();
             $table->string('material')->nullable();
@@ -28,6 +29,10 @@ return new class extends Migration
             $table->string('img2', 255);
             $table->string('img3', 255);
             $table->timestamps();
+
+
+            $table->foreign('marca')->references('id')->on('marcas');
+            $table->foreign('categoria')->references('id')->on('categorias');
         });
     }
 
