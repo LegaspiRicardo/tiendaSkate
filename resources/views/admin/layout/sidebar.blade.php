@@ -36,7 +36,7 @@
                     <a href="{{ url('/inventarioRopa') }}" class="col-10 mx-auto sidebarA"><li class="text-center sidebarli"> Ropa </li></a>
                     <a href="{{ url('/inventarioRopa') }}" class="col-10 mx-auto sidebarA"><li class="text-center sidebarli"> Ropa </li></a>
                     <hr>
-                    <a href="{{ url('/inventarioRopa') }}" class="col-10 mx-auto sidebarA"><li class="text-center sidebarli"> Categorias </li></a>
+                    <a href="{{ url('/categoriasAdmin') }}" class="col-10 mx-auto sidebarA"><li class="text-center sidebarli"> Categorias </li></a>
                     <a href="{{ url('/marcasAdmin') }}" class="col-10 mx-auto sidebarA"><li class="text-center sidebarli"> Marcas </li></a>
                 </div>
             </div>

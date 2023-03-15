@@ -23,34 +23,44 @@
                             <div class="col-5 text-center imagenes-form">
 
                                 <div class="row carrusel-noticias">
-                                    <div id="carouselExampleIndicators" class="carousel slide col-12 mx-auto" data-ride="carousel">
+                                    <div id="carouselExampleIndicators" class="carousel slide col-12 mx-auto"
+                                        data-ride="carousel">
 
                                         <div class="carousel-inner">
                                             <div class="carousel-item active">
                                                 <div class="col imagen-formulario">
-                                                    <img src="/PNGs/image.png" id="preview1" src="#" alt="Preview Image" class="img-form-registro mt-2">
+                                                    <img src="/PNGs/image.png" id="preview1" src="#"
+                                                        alt="Preview Image" class="img-form-registro mt-2">
                                                 </div>
                                                 <div class="col">
-                                                    <input type="file" data-preview-id="preview1" data-position="1" class="form-control btn-input-img" name="img1" accept="image/*" required>
+                                                    <input type="file" data-preview-id="preview1" data-position="1"
+                                                        class="form-control btn-input-img" name="img1"
+                                                        accept="image/*" required>
                                                 </div>
                                             </div>
 
                                             <div class="carousel-item">
                                                 <div class="col imagen-formulario">
-                                                    <img src="/PNGs/image.png" id="preview2" src="#" alt="Preview Image" class="img-form-registro mt-2">
+                                                    <img src="/PNGs/image.png" id="preview2" src="#"
+                                                        alt="Preview Image" class="img-form-registro mt-2">
                                                 </div>
                                                 <div class="col">
-                                                    <input type="file"  data-preview-id="preview2" data-position="2" class="form-control btn-input-img" name="img2" accept="image/*" required>
+                                                    <input type="file" data-preview-id="preview2" data-position="2"
+                                                        class="form-control btn-input-img" name="img2"
+                                                        accept="image/*" required>
                                                 </div>
 
                                             </div>
 
                                             <div class="carousel-item">
                                                 <div class="col imagen-formulario">
-                                                    <img src="/PNGs/image.png" id="preview3" src="#" alt="Preview Image" class="img-form-registro mt-2">
+                                                    <img src="/PNGs/image.png" id="preview3" src="#"
+                                                        alt="Preview Image" class="img-form-registro mt-2">
                                                 </div>
                                                 <div class="col">
-                                                    <input type="file" data-preview-id="preview3" data-position="3" class="form-control btn-input-img" name="img3" accept="image/*" required>
+                                                    <input type="file" data-preview-id="preview3" data-position="3"
+                                                        class="form-control btn-input-img" name="img3"
+                                                        accept="image/*" required>
                                                 </div>
 
                                             </div>
@@ -59,10 +69,12 @@
                                         </div>
                                     </div>
 
-                                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                                    <button class="carousel-control-prev" type="button"
+                                        data-target="#carouselExampleIndicators" data-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                     </button>
-                                    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                                    <button class="carousel-control-next" type="button"
+                                        data-target="#carouselExampleIndicators" data-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     </button>
                                 </div>
@@ -76,17 +88,19 @@
                                 <div class="row">
                                     <!---------- Modelo ------------>
                                     <div class="col-6">
-                                        <input type="text" placeholder="Código completo" class="form-control" name="modelo">
+                                        <input type="text" placeholder="Código completo" class="form-control"
+                                            name="modelo">
                                         <label for="modelo" class="helpText">Modelo</label>
                                     </div>
                                     <!---------- Marca ------------>
                                     <div class="col-6">
-                                        <select name="marca" class="custom-select form-control" id="marca" placeholder="Selecciona">
-                                            <option value="" class="select-option" selected hidden>Selecciona
-                                            </option>
-                                            <option value="" class="select-option">Volcom</option>
-                                            <option value="" class="select-option">Antifashion</option>
-                                            <option value="" class="select-option">DC</option>
+                                        <select name="marca" class="custom-select form-control" id="marca"
+                                            placeholder="Selecciona">
+                                            <option value="" class="select-option" selected hidden>Selecciona</option>
+                                            @foreach ($marca as $marca)
+                                                <option value="{{ $marca->id }}" class="select-option">
+                                                    {{ $marca->nombre }}</option>
+                                            @endforeach
                                         </select>
                                         <label for="marca" class="helpText">Marca</label>
                                     </div>
@@ -102,11 +116,11 @@
                                     <!---------- Categoría ------------>
                                     <div class="col-6">
                                         <select name="categoria" class="custom-select form-control" id="categoria" placeholder="Selecciona">
-                                          
-                                            <option value="Tablas" class="select-option">Tablas</option>
-                                            <option value="Tenis" class="select-option">Tenis</option>
-                                            <option value="Scooter" class="select-option">Scooter</option>
-                                            <option value="Ropa" class="select-option">Ropa</option>
+                                            <option value="" class="select-option" selected hidden>Selecciona</option>
+                                            @foreach ($categoria as $categoria)
+                                                <option value="{{ $categoria->id }}" class="select-option">
+                                                    {{ $categoria->nombre }}</option>
+                                            @endforeach
                                         </select>
                                         <label for="categoria" class="helpText">Categoría</label>
                                     </div>
@@ -116,8 +130,9 @@
                                 <div class="row">
                                     <!---------- Tamaño ------------>
                                     <div class="col-6 mr-auto">
-                                        <select name="tamano" class="custom-select form-control" id="tamano" placeholder="Selecciona">
-                                         
+                                        <select name="tamano" class="custom-select form-control" id="tamano"
+                                            placeholder="Selecciona">
+
                                             <option value="XS" class="select-option">XS</option>
                                             <option value="S" class="select-option">S</option>
                                             <option value="M" class="select-option">M</option>
@@ -129,25 +144,27 @@
 
                                     <!---------- Precio ------------>
                                     <div class="col-6 ml-auto">
-                                        <input type="number" placeholder="$ 00.00" class="form-control" name="precio">
+                                        <input type="number" placeholder="$ 00.00" class="form-control"
+                                            name="precio">
                                         <label for="precio" class="helpText">Precio</label>
                                     </div>
-                                      <!---------- Precio ------------>
-                                      <div class="col-6 ml-auto">
+                                    <!---------- Precio ------------>
+                                    <div class="col-6 ml-auto">
                                         <input type="cantidad" class="form-control" name="cantidad">
                                         <label for="cantidad" class="helpText">Cantidad</label>
                                     </div>
                                     <div class="col-6 ml-auto">
                                         <select name="estatus" class="custom-select form-control" id="estatus"
-                                        placeholder="Selecciona">
-                                        <option value="" class="select-option" selected hidden>Selecciona
-                                        </option>
-                                        <option value="existencia" class="select-option">Existencia</option>
-                                        <option value="sinExistencia" class="select-option">Sin existencia</option>
-                                    </select>
+                                            placeholder="Selecciona">
+                                            <option value="" class="select-option" selected hidden>Selecciona
+                                            </option>
+                                            <option value="existencia" class="select-option">Existencia</option>
+                                            <option value="sinExistencia" class="select-option">Sin existencia
+                                            </option>
+                                        </select>
                                         <label for="estatus" class="helpText">Estatus</label>
                                     </div>
-                                    
+
                                 </div>
 
 
@@ -164,13 +181,13 @@
 
                             </div>
                             <br>
-                        </div> 
-                    <div class="modal-footer">
-                        <button type="submit" class="btn btn-guardar m-0">+</button>
-                    </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-guardar m-0">+</button>
+                        </div>
                     </form>
                 </div>
-            
+
             </div>
         </div>
     </div>
