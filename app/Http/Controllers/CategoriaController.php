@@ -3,8 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Categoria;
-use App\Http\Requests\StoreCategoriaRequest;
-use App\Http\Requests\UpdateCategoriaRequest;
+use Illuminate\Http\Request;
 
 class CategoriaController extends Controller
 {
@@ -15,7 +14,8 @@ class CategoriaController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.categorias.index')
+        ->with('categoria',Categoria::all());
     }
 
     /**
@@ -25,7 +25,8 @@ class CategoriaController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.categorias.index')
+        ->with('categoria',Categoria::all());
     }
 
     /**
@@ -34,9 +35,22 @@ class CategoriaController extends Controller
      * @param  \App\Http\Requests\StoreCategoriaRequest  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StoreCategoriaRequest $request)
+    public function store(Request $request)
     {
-        //
+        $categoria = new Categoria();
+        $categoria->nombre = $request->nombre;
+        if($request->hasFile('img'))
+            {
+                $img= $request->file('img');
+                $destino='admin/files/categorias/';
+                $origen=$img->getClientOriginalName();
+                $img->move( $destino,$origen);
+                $categoria->img = $origen;
+            }
+            $categoria->save();
+
+            return view('admin.categorias.index')
+            ->with('categoria',Categoria::all());
     }
 
     /**
@@ -45,9 +59,12 @@ class CategoriaController extends Controller
      * @param  \App\Models\Categoria  $categoria
      * @return \Illuminate\Http\Response
      */
-    public function show(Categoria $categoria)
+    public function show($id)
     {
-        //
+        $categoria=Categoria::find($id);
+
+        return view('admin.categorias.show')
+        ->with('categoria',$categoria);
     }
 
     /**
@@ -56,9 +73,11 @@ class CategoriaController extends Controller
      * @param  \App\Models\Categoria  $categoria
      * @return \Illuminate\Http\Response
      */
-    public function edit(Categoria $categoria)
+    public function edit($id)
     {
-        //
+        $categoria=Categoria::find($id);
+        return view('admin.categorias.edit')
+        ->with('categoria',$categoria);
     }
 
     /**
@@ -68,9 +87,23 @@ class CategoriaController extends Controller
      * @param  \App\Models\Categoria  $categoria
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateCategoriaRequest $request, Categoria $categoria)
+    public function update(Request $request, $id)
     {
-        //
+        $categoria = Categoria::find($id);
+
+        $categoria->nombre = $request->nombre;
+        if($request->hasFile('img'))
+            {
+                $img= $request->file('img');
+                $destino='admin/files/categorias/';
+                $origen=$img->getClientOriginalName();
+                $img->move( $destino,$origen);
+                $categoria->img = $origen;
+            }
+            $categoria->save();
+
+            return view('admin.categorias.index')
+            ->with('categoria',Categoria::all());
     }
 
     /**
@@ -79,8 +112,13 @@ class CategoriaController extends Controller
      * @param  \App\Models\Categoria  $categoria
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Categoria $categoria)
+    public function destroy($id)
     {
-        //
+        $categoria = Categoria::find($id);
+        unlink('admin/files/categorias/'. $categoria->img);
+        $categoria->delete();
+
+        return view('admin.categorias.index')
+        ->with('categoria',Categoria::all());
     }
 }
