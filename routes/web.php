@@ -3,8 +3,10 @@
 use App\Http\Controllers\ClienteController;
 use App\Http\Controllers\EmpleadoController;
 use App\Http\Controllers\ProductoController;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MarcaController;
+use App\Http\Controllers\CategoriaController;
+use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +25,9 @@ use App\Http\Controllers\MarcaController;
 Route::view('/', 'website/index')->name('tiendaSkate');
 Route::view('/productos', 'website/productos')->name('productos');
 Route::view('/sesion', 'website/iniciosesion')->name('sesion');
+Route::view('/detalle', 'website/piezas/detalle')->name('detalle');
+
+
 
 
 // Route::view('/panelControl', 'admin/index')->name('panelControl');
@@ -38,10 +43,12 @@ Route::view('/equipo', 'admin/empleados/index')->name('equipo');
 //Route::view('/marcas', 'admin/marcas/index')->name('marcas');
 Route::view('/inventario', 'admin/productos/index')->name('inventario');
 
+
 Route::resource('/clienteAdmin',ClienteController::class);
 Route::resource('/equipoAdmin',EmpleadoController::class);
 Route::resource('/productoAdmin',ProductoController::class);
 Route::resource('/marcasAdmin',MarcaController::class);
+Route::resource('/categoriasAdmin',CategoriaController::class);
 
 
 
