@@ -190,8 +190,28 @@ h1 {
     border: none;
 }
 
+.detalle-card {
+    background-color: #ffffffbf;
+    width: 60%;
+    height: 580px;
+    margin-bottom: 60px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 5px 6px 3px #00000091;
+    margin: 40px;
+}
 
+.foto-detalle {
+    width: 80%;
+    margin: 5%;
+    border-radius: 30px;
+}
 
+.modelo{
+    height: 550px;
+    width: 80%;
+}
 
 /*------  Carrusel noticias --------*/
 
@@ -410,7 +430,13 @@ h1 {
     color: #212426;
     font-size: 25px;
     font-weight: bold;
+}
 
+
+.titulo-detalle {
+    color: #212426;
+    font-size: 55px;
+    font-weight: bold;
 }
 
 .info-producto {
@@ -430,6 +456,8 @@ h1 {
     width: 80%;
     border-radius: 30px;
 }
+
+
 
 .foto-tenis-vertical {
     margin-top: 2%;
