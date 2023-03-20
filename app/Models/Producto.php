@@ -18,14 +18,14 @@ class Producto extends Model
         return $this->belongsToMany(Compra::class);
     }
 
-    public function categorias()
+    public function categoria()
     {
-        return $this->belongsToMany(Categoria::class);
+        return $this->belongsTo(Categoria::class);
     }
 
-    public function marcas()
+    public function marca()
     {
-        return $this->belongsToMany(Marca::class);
+        return $this->belongsTo(Marca::class);
     }
 
 

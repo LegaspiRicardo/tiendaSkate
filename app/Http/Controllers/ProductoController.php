@@ -49,9 +49,9 @@ class ProductoController extends Controller
         $producto = new Producto();
 
         $producto->modelo = $request->modelo;
-        $producto->marca = $request->marca;
+        $producto->marca_id = $request->marca_id;
         $producto->precio = $request->precio;
-        $producto->categoria = $request->categoria;
+        $producto->categoria_id = $request->categoria_id;
         $producto->cantidad = $request->cantidad;
         $producto->color = $request->color;
         $producto->material = $request->material;
@@ -101,8 +101,9 @@ class ProductoController extends Controller
     {
         $producto=Producto::find($id);
         return view('admin.productos.show')
-        ->with('producto',$producto);
-
+        ->with('producto',$producto)
+        ->with('marca',Marca::all())
+        ->with('categoria',Categoria::all());
     }
 
     /**
@@ -115,8 +116,9 @@ class ProductoController extends Controller
     {
         $producto=Producto::find($id);
         return view('admin.productos.edit')
-        ->with('producto',$producto);
-
+        ->with('producto',$producto)
+        ->with('marca',Marca::all())
+        ->with('categoria',Categoria::all());
     }
 
     /**
@@ -131,9 +133,9 @@ class ProductoController extends Controller
         $producto=Producto::find($id);
 
         $producto->modelo = $request->modelo;
-        $producto->marca = $request->marca;
+        $producto->marca_id = $request->marca_id;
         $producto->precio = $request->precio;
-        $producto->categoria = $request->categoria;
+        $producto->categoria_id = $request->categoria_id;
         $producto->cantidad = $request->cantidad;
         $producto->color = $request->color;
         $producto->material = $request->material;
