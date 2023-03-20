@@ -9,6 +9,7 @@
             <th>#</th>
             <th>Modelo</th>
             <th>Marca</th>
+            <th>Categoria</th>
             <th>Precio</th>
             <th>Cantidad</th>
             <th>Color</th>
@@ -32,7 +33,8 @@
     <tr>
         <th scope="row">{{ $producto->id }}</th>
         <td class="text-center">{{ $producto->modelo }}</td>
-        <td>{{ $producto->marca }}</td>
+        <td>{{ $producto->marca->nombre }}</td>
+        <td>{{ $producto->categoria->nombre }}</td>
         <td>{{ $producto->precio }}</td>
         <td>{{ $producto->cantidad }}</td>
         <td>{{ $producto->color }}</td>

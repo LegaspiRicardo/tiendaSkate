@@ -79,11 +79,11 @@
                                     </div>
                                     <!---------- Marca ------------>
                                     <div class="col-6">
-                                        <select name="marca" class="custom-select form-control" id="marca" placeholder="{{ $producto->marca }}">
+                                        <select name="marca_id" class="custom-select form-control" id="marca_id" placeholder="{{ $producto->marca }}">
                                             
-                                            <option value="" class="select-option">Volcom</option>
-                                            <option value="" class="select-option">Antifashion</option>
-                                            <option value="" class="select-option">DC</option>
+                                            @foreach($marca as $marca)
+                                            <option value="{{$marca->id}}"{{ ($marca->id==$producto->marca_id)? 'selected' : '' }}>{{$marca->nombre}}</option>
+                                            @endforeach
                                         </select>
                                         <label for="marca" class="helpText">Marca</label>
                                     </div>
@@ -98,14 +98,13 @@
                                     </div>
                                     <!---------- Categoría ------------>
                                     <div class="col-6">
-                                        <select name="categoria" class="custom-select form-control" id="categoria" placeholder="{{ $producto->categoria }}">
+                                        <select name="categoria_id" class="custom-select form-control" id="categoria_id" placeholder="{{ $producto->categoria }}">
                                           
-                                            <option value="Tablas" class="select-option">Tablas</option>
-                                            <option value="Tenis" class="select-option">Tenis</option>
-                                            <option value="Scooter" class="select-option">Scooter</option>
-                                            <option value="Ropa" class="select-option">Ropa</option>
+                                            @foreach($categoria as $categoria)
+                                            <option value="{{$categoria->id}}"{{ ($categoria->id==$producto->categoria_id)? 'selected' : '' }}>{{$categoria->nombre}}</option>
+                                            @endforeach
                                         </select>
-                                        <label for="categoria" class="helpText">Categoría</label>
+                                        <label for="categoria_id" class="helpText">Categoría</label>
                                     </div>
                                 </div>
 

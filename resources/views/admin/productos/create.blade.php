@@ -94,7 +94,8 @@
                                     </div>
                                     <!---------- Marca ------------>
                                     <div class="col-6">
-                                        <select name="marca" class="custom-select form-control" id="marca"
+                                        <label for="marca_id" class="helpText">Marca</label>
+                                        <select name="marca_id" class="custom-select form-control" id="marca_id"
                                             placeholder="Selecciona">
                                             <option value="" class="select-option" selected hidden>Selecciona</option>
                                             @foreach ($marca as $marca)
@@ -102,7 +103,6 @@
                                                     {{ $marca->nombre }}</option>
                                             @endforeach
                                         </select>
-                                        <label for="marca" class="helpText">Marca</label>
                                     </div>
                                 </div>
                                 <br>
@@ -115,14 +115,14 @@
                                     </div>
                                     <!---------- Categoría ------------>
                                     <div class="col-6">
-                                        <select name="categoria" class="custom-select form-control" id="categoria" placeholder="Selecciona">
+                                        <label for="categoria_id" class="helpText">Categoría</label>
+                                        <select name="categoria_id" class="custom-select form-control" id="categoria_id" placeholder="Selecciona">
                                             <option value="" class="select-option" selected hidden>Selecciona</option>
                                             @foreach ($categoria as $categoria)
                                                 <option value="{{ $categoria->id }}" class="select-option">
                                                     {{ $categoria->nombre }}</option>
                                             @endforeach
                                         </select>
-                                        <label for="categoria" class="helpText">Categoría</label>
                                     </div>
                                 </div>
 

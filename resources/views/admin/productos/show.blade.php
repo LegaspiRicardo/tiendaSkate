@@ -73,10 +73,10 @@
                                     </div>
                                     <!---------- Marca ------------>
                                     <div class="col-6">
-                                        <input type="text" name="marca"
-                                        id="marca" placeholder="{{ $producto->marca }}" readonly>
+                                        <input type="text" name="marca_id"
+                                        id="marca_id" placeholder="{{ $producto->marca->nombre }}" readonly>
                                         
-                                        <label for="marca" class="helpText">Marca</label>
+                                        <label for="marca_id" class="helpText">Marca</label>
                                     </div>
                                 </div>
                                 <br>
@@ -89,9 +89,9 @@
                                     </div>
                                     <!---------- Categoría ------------>
                                     <div class="col-6">
-                                        <input type="text" name="categoria" id="categoria" placeholder="{{ $producto->categoria }}" readonly>
+                                        <input type="text" name="categoria_id" id="categoria_id" placeholder="{{ $producto->categoria->nombre }}" readonly>
                                         
-                                        <label for="categoria" class="helpText">Categoría</label>
+                                        <label for="categoria_id" class="helpText">Categoría</label>
                                     </div>
                                 </div>
 
