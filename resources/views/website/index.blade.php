@@ -3,6 +3,8 @@
 @section('titulo', 'Radical Boards ')
 
 @section('main')
+
+<!-- -----  Bigger View --------->
 <main class="d-none d-sm-block">
 
     <div class="row portada m-0 p-0">
@@ -12,7 +14,7 @@
                 <p class="">Tablas, tenis, adrenalina y diversión.</p>
                 <h1 class="">Nuestro estilo de vida</h1>
                 <p class="fuente-gris-claro">Visita la tienda en linea y conoce todos nuestros productos.</p>
-                <button class="mt-2  boton-portada">Ver mas</button>
+                <button class="mt-2  boton-portada">Ver más</button>
             </div>
         </div>
     </div>
@@ -481,8 +483,8 @@
                 <p class="mb-3">Te responderemos lo más pronto posible :)</p>
                 <form class="formulario mx-auto needs-validation" method="POST">
                     <div class="row">
-                        <label for="correo" class="col-6 mb-0 mt-2 ">Correo:</label>
-                        <label for="telefono" class="col-5 ml-auto mb-0 mt-2">Telefono:</label>
+                        <label for="correo" class="col-6 mb-1 mt-2 ">Correo:</label>
+                        <label for="telefono" class="col-5 ml-auto mb-1 mt-2">Telefono:</label>
 
                         <input type="mail" name="correo" class="col-6 form-input">
                         <input type="text" name="telefono" class="col-5 ml-auto form-input">
@@ -491,7 +493,7 @@
                         <textarea name="mensaje" id="mensaje" cols="25" rows="5" class="col-12 form-input"></textarea>
                         <input type="text" name="estatus" class="col-12 form-input" value="Pendiente" hidden>
 
-                        <input type="submit" value="Enviar" class="col-3 ml-auto form-btn ">
+                        <input type="submit" value="Enviar" class="col-2 ml-auto form-btn ">
                     </div>
                 </form>
             </div>
@@ -519,12 +521,11 @@
 
 
         </div>
-
-
-
-
     </div>
 </main>
+
+
+<!-- -----  Smaller View --------->
 
 <main class="d-block d-sm-none">
     <div class="row portada m-0 p-0">

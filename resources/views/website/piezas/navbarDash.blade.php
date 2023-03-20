@@ -1,12 +1,12 @@
-<nav class="navbarDash navbar-expand-lg row m-0 " id="navbarBigger">
+<nav class="navbarDash navbar-expand-lg row m-0" id="navbarBigger">
     <div class="col-3 text-center">
-        <a class="navbar-brand align-self-center" href="{{ url('/tiendaSkate') }}">Radical Boards logo</a>
+        <a class="navbar-brand align-self-center" href="{{ url('/') }}">Radical Boards logo</a>
     </div>
 
-    <div class="col-9 d-none d-sm-flex" >
-        <ul class="navbar-nav col-7 ml-auto justify-content-around mt-2">
+    <div class="col-9 d-none d-sm-flex " >
+        <ul class="navbar-nav col-7 ml-auto justify-content-around  ">
             <li class="nav-item text-center">
-                <a class="nav-link" href="{{ url('/tiendaSkate') }}">Inicio <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="{{ url('/') }}">Inicio <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item text-center">
                 <a class="nav-link" href="{{ url('productos') }}">Productos</a>

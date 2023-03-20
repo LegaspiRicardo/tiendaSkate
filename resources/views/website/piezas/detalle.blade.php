@@ -5,6 +5,11 @@
 @section('main')
 <div class="container--flex mb-5 pb-5">
 
+    <div class=" boton-regreso col-2 mr-auto text-center">
+        <a class="enlace-icono-volver" href="{{ url('/productos') }}"> <img src="PNGs/izquierda.png" alt="" class="icono-volver mt-4"></a>
+    </div>
+
+
 
     <div class="detalle-card row ">
 
@@ -16,7 +21,8 @@
 
 
         <div class="card-info col-6 ml-auto p-0 ">
-            <h3 class="titulo-detalle mt-4"> Tabla cuadros galacticos </h3>
+            <p class="marca-detalle text-left mr-auto mb-0 mt-4">Element</p>
+            <h3 class="titulo-detalle mt-0"> Fly Sky 1998 </h3>
             <div class="col-10 mr-auto text-justify p-0 ">
                 <p class="info-producto"> Modelo especial para realizar todos los trucos posibles y
                     por haber dentro del mundo del skate. <br> Sus trucks marca Element harán que
