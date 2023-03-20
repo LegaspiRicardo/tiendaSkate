@@ -292,7 +292,7 @@ h1 {
     object-fit: cover;
     position: relative;
     border-radius: 5%;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 
@@ -300,7 +300,7 @@ h1 {
 .img-blog:hover {
     opacity: 1;
     transform: scale(1.1);
-    transition-duration: 2s;
+    transition-duration: 1s;
 
 
 }
@@ -700,11 +700,57 @@ h6 {
 
 
 
+/* ----------BLOG -------------*/
 
 
+.foto-amigos-blog {
+    margin-top: 0%;
+    width: 100%;
+    max-height: 850px;
+    object-fit: cover;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    filter: brightness(0.8);
+    margin-bottom: 500px;
+}
 
+.titulo-eventos{
+    font-size: 60px;
+    z-index: 3;
+    font-weight: bolder;
+    margin: 10% 0 30% 0;
+    text-shadow: 1px 1px black;
+}
 
+.carta-evento{
+    background-color:#fafafa26 ;
+    width: 70%;
+    border-radius: 10px;
+}
 
+.imagen-eventos{
+    max-width: 80%;
+    max-height: 390px;
+    border-radius: 10px;
+}
+
+.fecha-carta-eventos{
+    text-align: right;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.texto-carta-eventos{
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.titulo-carta-eventos{
+    font-size: 24px;
+    margin-top: 2%;
+    font-weight: bolder;
+}
 
 
 /* --------------RESPONSIVE -------------*/
