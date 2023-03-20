@@ -12,7 +12,7 @@
                 <a class="nav-link" href="{{ url('productos') }}">Productos</a>
             </li>
             <li class="nav-item mr-5">
-                <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="{{ url('eventos') }}">Eventos</a>
             </li>
             <li class="nav-item mr-5">
                 <a class="nav-link" href="#">Link</a>

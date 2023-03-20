@@ -12,10 +12,10 @@
                 <a class="nav-link" href="{{ url('productos') }}">Productos</a>
             </li>
             <li class="nav-item text-center">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="{{ url('eventos') }}">Eventos</a>
             </li>
             <li class="nav-item text-center">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Contacto</a>
             </li>
             <li class="nav-item text-center">
                 <a class="nav-link pl-0 pr-0" href="{{ url('sesion') }}">Inicia sesión</a>

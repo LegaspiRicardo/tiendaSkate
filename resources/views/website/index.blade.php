@@ -285,11 +285,11 @@
     <div class="row text-center blog ">
         <img src="images/vigas.jpg" alt="" class="imagen-fondo-blog ">
         <div class="col-4 mx-auto mt-5 p-0">
-            <img src="images/tablaCuadros.jpg" alt="" class="img-blog">
+            <img src="images/skater2.jpg" alt="" class="img-blog">
             <h3 class="btn-blog mt-3">Blog</h3>
         </div>
         <div class="col-4 mx-auto mt-5 p-0">
-            <img src="images/skating.jpg" alt="" class="img-blog">
+            <img src="images/skateFriends.jpg" alt="" class="img-blog">
             <h3 class="btn-blog mt-3">Eventos</h3>
         </div>
     </div>
