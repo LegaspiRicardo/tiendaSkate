@@ -25,6 +25,7 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'website/index')->name('tiendaSkate');
 Route::view('/productos', 'website/productos')->name('productos');
 Route::view('/sesion', 'website/iniciosesion')->name('sesion');
+Route::view('/eventos', 'website/eventos')->name('eventos');
 Route::view('/detalle', 'website/piezas/detalle')->name('detalle');
 
 
@@ -40,7 +41,6 @@ Route::view('/inventarioTablas', 'admin/tablas')->name('inventarioTablas');
 
 Route::view('/clientes', 'admin/clientes/index')->name('clientes');
 Route::view('/equipo', 'admin/empleados/index')->name('equipo');
-//Route::view('/marcas', 'admin/marcas/index')->name('marcas');
 Route::view('/inventario', 'admin/productos/index')->name('inventario');
 
 
