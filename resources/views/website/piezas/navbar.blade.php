@@ -15,7 +15,7 @@
             <a class="nav-link" href="{{ url('eventos') }}">Eventos</a>
             </li>
             <li class="nav-item mr-5">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="{{url('blog')}}">Blog</a>
             </li>
             <li class="nav-item ">
                 <a class="nav-link pl-0 pr-0" href="{{ url('sesion') }}">Inicia sesión</a>

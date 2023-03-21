@@ -14,7 +14,7 @@
                 <p class="">Tablas, tenis, adrenalina y diversión.</p>
                 <h1 class="">Nuestro estilo de vida</h1>
                 <p class="fuente-gris-claro">Visita la tienda en linea y conoce todos nuestros productos.</p>
-                <button class="mt-2  boton-portada">Ver más</button>
+                <a class="mt-2 boton-portada" href="{{url('productos')}}">Ver más</a>
             </div>
         </div>
     </div>
@@ -22,19 +22,19 @@
     <div class="row col-10 mx-auto categorias">
         <div class="col-3 p-0 categoriaItem">
             <img src="images/scooterDalle.png" alt="" class="img-categorias">
-            <h3>Scooters</h3>
+            <h3 class="titulo-categorias">Scooters</h3>
         </div>
         <div class="col-3 p-0 categoriaItem">
             <img src="images/skateDalle1.png" alt="" class="img-categorias">
-            <h3>Tablas</h3>
+            <h3 class="titulo-categorias">Tablas</h3>
         </div>
         <div class="col-3 p-0 categoriaItem">
             <img src="images/playeraDalle1.png" alt="" class="img-categorias">
-            <h3>Playeras</h3>
+            <h3 class="titulo-categorias">Playeras</h3>
         </div>
         <div class="col-3 p-0 categoriaItem">
             <img src="images/cascoDalle.png" alt="" class="img-categorias">
-            <h3>Accesorios</h3>
+            <h3 class="titulo-categorias">Accesorios</h3>
         </div>
     </div>
 

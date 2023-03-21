@@ -1,4 +1,4 @@
-<nav class="navbarDash navbar-expand-lg row m-0" id="navbarBigger">
+Blog<nav class="navbarDash navbar-expand-lg row m-0" id="navbarBigger">
     <div class="col-3 text-center">
         <a class="navbar-brand align-self-center" href="{{ url('/') }}">Radical Boards logo</a>
     </div>
@@ -15,7 +15,7 @@
                 <a class="nav-link" href="{{ url('eventos') }}">Eventos</a>
             </li>
             <li class="nav-item text-center">
-                <a class="nav-link" href="#">Contacto</a>
+                <a class="nav-link" href="{{url('blog')}}">Blog</a>
             </li>
             <li class="nav-item text-center">
                 <a class="nav-link pl-0 pr-0" href="{{ url('sesion') }}">Inicia sesión</a>
