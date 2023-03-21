@@ -26,6 +26,7 @@ Route::view('/', 'website/index')->name('tiendaSkate');
 Route::view('/productos', 'website/productos')->name('productos');
 Route::view('/sesion', 'website/iniciosesion')->name('sesion');
 Route::view('/eventos', 'website/eventos')->name('eventos');
+Route::view('/blog', 'website/blog')->name('blog');
 Route::view('/detalle', 'website/piezas/detalle')->name('detalle');
 
 
