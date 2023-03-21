@@ -88,6 +88,7 @@ body {
 }
 
 .boton-portada {
+    color: white;
     background-color: transparent;
     padding: 5px 3%;
     font-size: 20px;
@@ -388,18 +389,24 @@ h1 {
 /*-------------------------------- PRODUCTOS ESTILOS------------------------------------------ */
 
 .btn-selector {
-    margin-right: 2rem;
-    color: #3e3e3e;
-    text-shadow: 1px 1px rgba(255, 255, 255, 0.577);
-    font-size: 1.6rem;
-    background-color: #41d083;
+    text-shadow: 1px 1px black ;
+    font-size: 1.3rem;
+    background-color: transparent;
     border: none;
     height: 40px;
-    width: 190px;
-    border-radius: 109px;
+    width: 60%;
+    margin: 6% 0;
+    border-radius: 10px;
+    display: inline;
+    text-align: center;
+}
 
-    font-weight: bolder;
+.btn-selector:hover{
+    border-bottom:solid 1px white;
+}
 
+.aside-productos{
+    top: 0px;
 }
 
 .main-productos {
@@ -408,7 +415,9 @@ h1 {
 }
 
 .selector-producto {
-    display: flex;
+    display: block;
+    position: sticky;
+    top: 0;
     justify-content: space-between;
     margin: 70px 0 80px 0;
     align-items: center;
@@ -764,6 +773,7 @@ h6 {
     top: 0;
     object-fit: cover;
     filter: brightness(0.65);
+    z-index: -1;
 }
 
 
