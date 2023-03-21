@@ -4,7 +4,7 @@
 
 @section('main')
 <div class="container--flex">
-    <img class="foto-amigos-blog" src="images/skateboard.jpg" alt="">
+    <img class="imagen-fondo-eventos" src="images/skateboard.jpg" alt="">
 
 
     <h2 class="titulo-eventos">Proximos eventos  <p class="text-center">Demuestra quien es el mejor   </p></h2>
