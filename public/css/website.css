@@ -8,7 +8,7 @@
 
 }
 
-p{
+p {
     font-size: 20px;
 }
 
@@ -101,7 +101,7 @@ body {
 .boton-portada:hover {
     opacity: 1;
     background-color: white;
-    color:#298152;
+    color: #298152;
 }
 
 h1 {
@@ -186,6 +186,11 @@ h1 {
     justify-content: center;
 }
 
+.btn{
+    background-color:transparent;
+    border: solid 0.5px white;
+}
+
 .texto-carrusel-tablas {
     margin-top: 2%;
 }
@@ -214,11 +219,16 @@ h1 {
     border-radius: 30px;
 }
 
-.modelo{
+.modelo {
     height: 550px;
     width: 80%;
     border-radius: 20px;
 }
+
+.estrella{
+    max-width: 20px;
+}
+
 
 /*------  Carrusel noticias --------*/
 
@@ -363,7 +373,7 @@ h1 {
     transition: all 0.3s ease-in-out;
 }
 
-#mensaje{
+#mensaje {
     resize: none;
     background-color: #3c3d3e38;
 }
@@ -374,7 +384,7 @@ h1 {
 .form-btn:hover {
     opacity: 1;
     background-color: white;
-    color:#212426;
+    color: #212426;
 }
 
 .img-formulario {
@@ -389,7 +399,7 @@ h1 {
 /*-------------------------------- PRODUCTOS ESTILOS------------------------------------------ */
 
 .btn-selector {
-    text-shadow: 1px 1px black ;
+    text-shadow: 1px 1px black;
     font-size: 1.3rem;
     background-color: transparent;
     border: none;
@@ -401,11 +411,11 @@ h1 {
     text-align: center;
 }
 
-.btn-selector:hover{
-    border-bottom:solid 1px white;
+.btn-selector:hover {
+    border-bottom: solid 1px white;
 }
 
-.aside-productos{
+.aside-productos {
     top: 0px;
 }
 
@@ -472,46 +482,45 @@ h1 {
 
 
 .info-producto {
-    color:#3c3d3e;
+    color: #3c3d3e;
     font-size: 18px;
-    font-weight:490;
+    font-weight: 490;
     opacity: 0.8;
     text-align: justify;
 }
 
 .precio-producto {
-    color:#3c3d3e;
-    font-size: 20
-    px;
+    color: #3c3d3e;
+    font-size: 20 px;
     font-weight: bolder;
 }
 
-.marca-detalle{
+.marca-detalle {
     color: rgb(41, 139, 200);
     font-weight: 700;
 }
 
 .precio-detalle {
-    color:#3c3d3e;
+    color: #3c3d3e;
     font-size: 50px;
     font-weight: bolder;
 }
 
-.icono-volver{
+.icono-volver {
     max-width: 15%;
 }
 
-.enlace-icono-volver{
+.enlace-icono-volver {
     background-color: #fafafa26;
     padding: 1% 1% 11% 1%;
     border-radius: 10px;
 }
 
-.enlace-icono-volver:hover{
+.enlace-icono-volver:hover {
     background-color: #fafafa6f;
 }
 
-.icono-volver:hover{
+.icono-volver:hover {
     cursor: pointer;
 }
 
@@ -523,28 +532,28 @@ h1 {
     border-radius: 30px;
 }
 
-.letra-tamano{
-    color:#3c3d3e;
+.letra-tamano {
+    color: #3c3d3e;
     font-size: 20px;
 }
 
-.precio-titulo{
+.precio-titulo {
     color: #3c3d3e;
     margin-bottom: 0;
 }
 
-.btn-detalle{
+.btn-detalle {
     padding: 3% 5%;
     border-radius: 10px;
-    border: solid  rgb(41, 139, 200);
-    color:  rgb(41, 139, 200);
+    border: solid rgb(41, 139, 200);
+    color: rgb(41, 139, 200);
     font-size: 18px;
     opacity: 0.8;
     font-weight: bolder;
 }
 
 
-.btn-detalle:hover{
+.btn-detalle:hover {
     background-color: rgb(41, 139, 200);
     color: white;
 }
@@ -701,7 +710,7 @@ h6 {
 
 
 
-.titulo-tamaño-detalle{
+.titulo-tamaño-detalle {
     color: #3c3d3e;
     opacity: 0.7;
     font-size: 16px;
@@ -724,7 +733,7 @@ h6 {
     margin-bottom: 500px;
 }
 
-.titulo-eventos{
+.titulo-eventos {
     font-size: 60px;
     z-index: 3;
     font-weight: bolder;
@@ -732,30 +741,30 @@ h6 {
     text-shadow: 1px 1px black;
 }
 
-.carta-evento{
-    background-color:#fafafa26 ;
+.carta-evento {
+    background-color: #fafafa26;
     width: 70%;
     border-radius: 10px;
 }
 
-.imagen-eventos{
+.imagen-eventos {
     max-width: 80%;
     max-height: 390px;
     border-radius: 10px;
 }
 
-.fecha-carta-eventos{
+.fecha-carta-eventos {
     text-align: right;
     font-size: 14px;
     opacity: 0.6;
 }
 
-.texto-carta-eventos{
+.texto-carta-eventos {
     font-size: 18px;
     opacity: 0.8;
 }
 
-.titulo-carta-eventos{
+.titulo-carta-eventos {
     font-size: 24px;
     margin-top: 2%;
     font-weight: bolder;
@@ -777,7 +786,7 @@ h6 {
 }
 
 
-.titulo-blog{
+.titulo-blog {
     font-size: 60px;
     z-index: 3;
     font-weight: bolder;
@@ -785,33 +794,101 @@ h6 {
     text-shadow: 1px 1px black;
 }
 
-.imagen-carta-blog{
+.imagen-carta-blog {
     border-radius: 10px;
     max-width: 80%;
     max-height: 230px;
     object-fit: cover;
 }
 
-.carta-blog{
+.carta-blog {
     padding: 1% 0;
-    background-color:#83838361 ;
+    background-color: #83838361;
     border-radius: 10px;
 }
 
-.titulo-carta-blog{
+.titulo-carta-blog {
     font-weight: bold;
 }
 
-.texto-carta-blog{
+.texto-carta-blog {
     text-align: justify;
     opacity: 0.8;
     font-size: 16px;
 }
 
-.fecha-publicacion-blog{
+.fecha-publicacion-blog {
     font-size: 14px;
     opacity: 0.6;
 }
+
+
+
+
+
+.MultiCarousel {
+    float: left;
+    overflow: hidden;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+}
+
+.MultiCarousel {
+
+    max-height: 550px;
+}
+
+.MultiCarousel .MultiCarousel-inner {
+    transition: 1s ease all;
+    float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item {
+    float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item>div {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background: rgba(137, 118, 224, 0);
+    color: #666;
+}
+
+.MultiCarousel .leftLst,
+.MultiCarousel .rightLst {
+    position: absolute;
+    border-radius: 50%;
+    top: calc(50% - 20px);
+}
+
+.MultiCarousel .leftLst {
+    left: 0;
+}
+
+.MultiCarousel .rightLst {
+    right: 0;
+}
+
+.MultiCarousel .leftLst.over,
+.MultiCarousel .rightLst.over {
+    pointer-events: none;
+    background: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* --------------RESPONSIVE -------------*/
 
@@ -863,8 +940,9 @@ h6 {
         width: 100%;
         filter: brightness(1.1);
     }
+
     .marcas-carrusel {
-        margin:2% 0 8% 0;
+        margin: 2% 0 8% 0;
     }
 
 
