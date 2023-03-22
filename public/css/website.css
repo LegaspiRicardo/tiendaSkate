@@ -554,8 +554,7 @@ h1 {
 
 .foto-producto {
     margin-top: 2%;
-
-    overflow: hidden;
+    width: 80%;
     border-radius: 30px;
 }
 
@@ -908,13 +907,38 @@ h6 {
 
 
 
+/* ------  LANDING PAGE ------------*/
+.imagen-fondo-landing{
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 5000px;
+    object-fit: cover;
+}
 
 
+.titulo-landing {
+    font-size: 80px;
+    z-index: 3;
+    font-weight: bolder;
+    margin: 8% 0 2% 0;
+    text-shadow: 1px 1px black;
+}
 
 
+.gif{
+    width: 1000px;
+    mix-blend-mode: screen;
+    filter: invert();
+}
 
-
-
+.divisor-landing {
+    padding: 5px 0;
+    background-color: #83838361;
+    border-radius: 10px;
+}
 
 
 /* --------------RESPONSIVE -------------*/
