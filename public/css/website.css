@@ -554,7 +554,8 @@ h1 {
 
 .foto-producto {
     margin-top: 2%;
-    width: 80%;
+
+    overflow: hidden;
     border-radius: 30px;
 }
 
