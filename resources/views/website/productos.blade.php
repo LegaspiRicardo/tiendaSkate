@@ -29,18 +29,25 @@
         <div class="col-9 ml-auto">
             <main class="main-productos">
 
-                <div class="product-card todo tablas">
-                    <img class="foto-producto" src="images/tablas/tabla11.png" alt="">
-                    <div class="card-info">
-                        <div class="titulo-producto">
-                            Tabla cuadros 1
-                        </div>
-                        <p class="info-producto"> Color blanco, baleros acero</p>
-                        <div class="comprar">
-                            <p class="precio-producto">$333</p>
+              
+
+                @foreach ($producto as $producto)
+                    <div class="product-card todo {{ $producto->categoria->nombre }}">
+                        <img class="foto-producto" src="/admin/files/productos/{{ $producto->img1 }}" alt="">
+                        <div class="card-info">
+                            <div class="titulo-producto">
+                                {{ $producto->modelo }}
+                            </div>
+                            <p class="info-producto">{{ $producto->descripcion }}</p>
+                            <div class="comprar">
+                                <p class="precio-producto">${{ $producto->precio }}</p>
+                                <a class="btn btn-light mb-4" href="{{ url('/detalle') }}">Ver más</a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                @endforeach
+
+
 
                 <div class="product-card todo tenis">
                     <img class="foto-tenis-vertical" src="images/tenis/tenis1v.png" alt="">

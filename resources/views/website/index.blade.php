@@ -1,3 +1,8 @@
+
+
+
+
+
 @extends('website.piezas.plantillaDash')
 
 @section('titulo', 'Radical Boards ')
@@ -20,7 +25,7 @@
     </div>
 
     <div class="row col-10 mx-auto categorias">
-        <div class="col-3 p-0 categoriaItem">
+        <div class="col-3 p-0 categoriaItem" href="Varios">
             <img src="images/scooterDalle.png" alt="" class="img-categorias">
             <h3 class="titulo-categorias">Scooters</h3>
         </div>
@@ -30,11 +35,11 @@
         </div>
         <div class="col-3 p-0 categoriaItem">
             <img src="images/playeraDalle1.png" alt="" class="img-categorias">
-            <h3 class="titulo-categorias">Playeras</h3>
+            <h3 class="titulo-categorias">Ropa y Calzado</h3>
         </div>
         <div class="col-3 p-0 categoriaItem">
             <img src="images/cascoDalle.png" alt="" class="img-categorias">
-            <h3 class="titulo-categorias">Accesorios</h3>
+            <h3 class="titulo-categorias" href="Varios">Accesorios</h3>
         </div>
     </div>
 
@@ -74,9 +79,10 @@
                             </div>
                         </div>
                     </div>
+                    @foreach ($producto->where('categoria.nombre', 'tablas') as $producto_tabla)
                     <div class="item">
                         <div class="card">
-                            <img src="images/tablas/tabla8.png" class="img-tabla-carrusel text-start mb-3" alt="...">
+                            <img src="/admin/files/productos/{{$producto_tabla->img1}}" class="img-tabla-carrusel text-start mb-3" alt="...">
                             <div class="card-body text-center p-0">
                                 <div class="estrellas col-10 mx-auto mb-2">
                                     <img src="PNGs/star.png" class="estrella d-inline" alt="">
@@ -85,11 +91,12 @@
                                     <img src="PNGs/halfStar.png" class="estrella d-inline" alt="">
                                     <img src="PNGs/emptyStar.png" class="estrella d-inline" alt="">
                                 </div>
-                                <h5 class="card-title">Sour Soul Dip</h5>
-                                <p class="card-text mx-auto text-center">$699.00</p>
+                                <h5 class="card-title"> {{$producto_tabla->modelo}}</h5>
+                                <p class="card-text mx-auto text-center"><span>$</span>{{$producto_tabla->precio}}</p>
                             </div>
                         </div>
                     </div>
+                    @endforeach
                     <div class="item">
                         <div class="card">
                             <img src="images/tablas/tabla3.png" class="img-tabla-carrusel text-start mb-3" alt="...">
@@ -243,9 +250,10 @@
         <div class="col-6 mr-auto">
             <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel" data-interval="1000">
                 <div class="MultiCarousel-inner">
+                    @foreach ($producto->where('categoria.nombre', 'ropa') as $producto_ropa)
                     <div class="item">
                         <div class="card">
-                            <img src="images/playeras/playera1.png" class="img-ropa-carrusel text-start mb-3" alt="...">
+                            <img src="/admin/files/productos/{{$producto_ropa->img1}}" class="img-ropa-carrusel text-start mb-3" alt="...">
                             <div class="card-body text-center p-0">
                                 <div class="estrellas col-10 mx-auto mb-2">
                                     <img src="PNGs/star.png" class="estrella d-inline" alt="">
@@ -254,11 +262,12 @@
                                     <img src="PNGs/star.png" class="estrella d-inline" alt="">
                                     <img src="PNGs/halfStar.png" class="estrella d-inline" alt="">
                                 </div>
-                                <h5 class="card-title">Maddness</h5>
-                                <p class="card-text mx-auto text-center">$299.00</p>
+                                <h5 class="card-title">{{$producto_ropa->modelo}}</h5>
+                                <p class="card-text mx-auto text-center"><span>$</span>{{$producto_ropa->precio}}</p>
                             </div>
                         </div>
                     </div>
+                    @endforeach
                     <div class="item">
                         <div class="card">
                             <img src="images/playeras/playera2.png" class="img-ropa-carrusel text-start mb-3" alt="...">
@@ -395,38 +404,7 @@
         </div>
     </div>
 
-    <!-- <div class="row carrusel-noticias">
-        <div id="carouselExampleIndicators" class="carousel slide col-12 mx-auto" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="images/skatePark1.jpg" class="d-block img-carrusel-noticias" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/skateFriends.jpg" class="d-block img-carrusel-noticias" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/skatePerfil.jpg" class="d-block img-carrusel-noticias" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="images/vansYcalceta.jpg" class="d-block img-carrusel-noticias" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </button>
-        </div>
-    </div> -->
+
 
     <div class="row tendencias-carrusel ">
         <div class="col-8 mx-auto mt-3 mb-4">
@@ -587,6 +565,8 @@
         </div>
     </div>
 
+
+    
     <div class="row marcas-carrusel ">
         <img src="images/grafiti2.jpg" alt="" class="imagen-fondo-marcas ">
         <div class="col-8 mt-4 mx-auto">
@@ -596,6 +576,7 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="cards-wrapper">
+                            
                             <div class="card mx-auto">
                                 <img src="images/logos/toyMachine.png" class="element img-marca-carrusel " alt="...">
                             </div>
@@ -628,14 +609,6 @@
                         </div>
                     </div>
 
-                    <!-- <a class="carousel-control-prev" href="#carouselBrandsControls" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselBrandsControls" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a> -->
                 </div>
             </div>
         </div>

@@ -31,10 +31,10 @@
 
             <div class="collapse" id="collapse">
                 <div class="card card-collapse">
-                    <a href="{{ url('/inventarioTenis') }}" class="col-10 mx-auto sidebarA"><li class="text-center sidebarli"> Tenis </li></a>
-                    <a href="{{ url('/inventarioTablas') }}" class="col-10 mx-auto sidebarA"><li class="text-center sidebarli"> Tablas </li></a>
-                    <a href="{{ url('/inventarioRopa') }}" class="col-10 mx-auto sidebarA"><li class="text-center sidebarli"> Ropa </li></a>
-                    <a href="{{ url('/inventarioRopa') }}" class="col-10 mx-auto sidebarA"><li class="text-center sidebarli"> Ropa </li></a>
+                    <a href="{{ url('/productoAdmin') }}" class="col-10 mx-auto sidebarA"><li class="text-center sidebarli"> Tenis </li></a>
+                    <a href="{{ url('/productoAdmin') }}" class="col-10 mx-auto sidebarA"><li class="text-center sidebarli"> Tablas </li></a>
+                    <a href="{{ url('/productoAdmin') }}" class="col-10 mx-auto sidebarA"><li class="text-center sidebarli"> Ropa </li></a>
+                    <a href="{{ url('/productoAdmin') }}" class="col-10 mx-auto sidebarA"><li class="text-center sidebarli"> Ropa </li></a>
                     <hr>
                     <a href="{{ url('/categoriasAdmin') }}" class="col-10 mx-auto sidebarA"><li class="text-center sidebarli"> Categorias </li></a>
                     <a href="{{ url('/marcasAdmin') }}" class="col-10 mx-auto sidebarA"><li class="text-center sidebarli"> Marcas </li></a>
