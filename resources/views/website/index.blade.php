@@ -51,61 +51,26 @@
                                     <img src="PNGs/star.png" class="estrella d-inline" alt="">
                                     <img src="PNGs/star.png" class="estrella d-inline" alt="">
                                     <img src="PNGs/star.png" class="estrella d-inline" alt="">
-                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
-                                </div>
-                                <h5 class="card-title">Maddness Mind 1989</h5>
-                                <p class="card-text">Gray/green head.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            <img src="images/tablas/tabla1.png" class="img-tabla-carrusel text-start mb-3" alt="...">
-                            <div class="card-body text-center p-0">
-                            <div class="estrellas col-10 mx-auto mb-2">
-                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
-                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
-                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
                                     <img src="PNGs/halfStar.png" class="estrella d-inline" alt="">
                                 </div>
-                                <h5 class="card-title">Maddness</h5>
-                                <p class="card-text">Gray/green head.</p>
+                                <h5 class="card-title">Maddness Mind 1989</h5>
+                                <p class="card-text mx-auto text-center">$499.00</p>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="card">
-                            <img src="images/tablas/tabla3.png" class="img-tabla-carrusel text-start mb-3" alt="...">
+                            <img src="images/tablas/tabla2.png" class="img-tabla-carrusel text-start mb-3" alt="...">
                             <div class="card-body text-center p-0">
-                                <h5 class="card-title">Maddness</h5>
-                                <p class="card-text">Gray/green head.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            <img src="images/tablas/tabla4.png" class="img-tabla-carrusel text-start mb-3" alt="...">
-                            <div class="card-body text-center p-0">
-                                <h5 class="card-title">Maddness</h5>
-                                <p class="card-text">Gray/green head.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            <img src="images/tablas/tabla5.png" class="img-tabla-carrusel text-start mb-3" alt="...">
-                            <div class="card-body text-center p-0">
-                                <h5 class="card-title">Maddness</h5>
-                                <p class="card-text">Gray/green head.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            <img src="images/tablas/tabla6.png" class="img-tabla-carrusel text-start mb-3" alt="...">
-                            <div class="card-body text-center p-0">
-                                <h5 class="card-title">Maddness</h5>
-                                <p class="card-text">Gray/green head.</p>
+                                <div class="estrellas col-10 mx-auto mb-2">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/emptyStar.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/emptyStar.png" class="estrella d-inline" alt="">
+                                </div>
+                                <h5 class="card-title">SpringBreak ABC</h5>
+                                <p class="card-text mx-auto text-center">$450.00</p>
                             </div>
                         </div>
                     </div>
@@ -113,17 +78,31 @@
                         <div class="card">
                             <img src="images/tablas/tabla8.png" class="img-tabla-carrusel text-start mb-3" alt="...">
                             <div class="card-body text-center p-0">
-                                <h5 class="card-title">Maddness</h5>
-                                <p class="card-text">Gray/green head.</p>
+                                <div class="estrellas col-10 mx-auto mb-2">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/halfStar.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/emptyStar.png" class="estrella d-inline" alt="">
+                                </div>
+                                <h5 class="card-title">Sour Soul Dip</h5>
+                                <p class="card-text mx-auto text-center">$699.00</p>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="card">
-                            <img src="images/tablas/tabla9.png" class="img-tabla-carrusel text-start mb-3" alt="...">
+                            <img src="images/tablas/tabla3.png" class="img-tabla-carrusel text-start mb-3" alt="...">
                             <div class="card-body text-center p-0">
-                                <h5 class="card-title">Maddness</h5>
-                                <p class="card-text">Gray/green head.</p>
+                                <div class="estrellas col-10 mx-auto mb-2">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/halfStar.png" class="estrella d-inline" alt="">
+                                </div>
+                                <h5 class="card-title">Flip Out K-097</h5>
+                                <p class="card-text mx-auto text-center">$559.00</p>
                             </div>
                         </div>
                     </div>
@@ -131,17 +110,111 @@
                         <div class="card">
                             <img src="images/tablas/tabla11.png" class="img-tabla-carrusel text-start mb-3" alt="...">
                             <div class="card-body text-center p-0">
-                                <h5 class="card-title">Maddness</h5>
-                                <p class="card-text">Gray/green head.</p>
+                                <div class="estrellas col-10 mx-auto mb-2">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                </div>
+                                <h5 class="card-title">Skills Kingdom 3.0</h5>
+                                <p class="card-text mx-auto text-center">$799.00</p>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="card">
-                            <img src="images/tablas/tabla12.png" class="img-tabla-carrusel text-start mb-3" alt="...">
+                            <img src="images/tablas/tabla6.png" class="img-tabla-carrusel text-start mb-3" alt="...">
                             <div class="card-body text-center p-0">
-                                <h5 class="card-title">Maddness</h5>
-                                <p class="card-text">Gray/green head.</p>
+                                <div class="estrellas col-10 mx-auto mb-2">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                </div>
+                                <h5 class="card-title">SpaceShip Apol</h5>
+                                <p class="card-text mx-auto text-center">$209.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="images/tablas/tabla11.png" class="img-tabla-carrusel text-start mb-3" alt="...">
+                            <div class="card-body text-center p-0">
+                                <div class="estrellas col-10 mx-auto mb-2">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                </div>
+                                <h5 class="card-title">InDreams flip</h5>
+                                <p class="card-text mx-auto text-center">$699.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="images/tablas/tabla11.png" class="img-tabla-carrusel text-start mb-3" alt="...">
+                            <div class="card-body text-center p-0">
+                                <div class="estrellas col-10 mx-auto mb-2">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                </div>
+                                <h5 class="card-title">Maddness Mind 1989</h5>
+                                <p class="card-text mx-auto text-center">$499.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="images/tablas/tabla11.png" class="img-tabla-carrusel text-start mb-3" alt="...">
+                            <div class="card-body text-center p-0">
+                                <div class="estrellas col-10 mx-auto mb-2">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                </div>
+                                <h5 class="card-title">Maddness Mind 1989</h5>
+                                <p class="card-text mx-auto text-center">$499.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="images/tablas/tabla11.png" class="img-tabla-carrusel text-start mb-3" alt="...">
+                            <div class="card-body text-center p-0">
+                                <div class="estrellas col-10 mx-auto mb-2">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                </div>
+                                <h5 class="card-title">Maddness Mind 1989</h5>
+                                <p class="card-text mx-auto text-center">$499.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="images/tablas/tabla11.png" class="img-tabla-carrusel text-start mb-3" alt="...">
+                            <div class="card-body text-center p-0">
+                                <div class="estrellas col-10 mx-auto mb-2">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                </div>
+                                <h5 class="card-title">Maddness Mind 1989</h5>
+                                <p class="card-text mx-auto text-center">$499.00</p>
                             </div>
                         </div>
                     </div>
@@ -172,90 +245,136 @@
                 <div class="MultiCarousel-inner">
                     <div class="item">
                         <div class="card">
-                            <img src="images/playeras/playera1.png" class="img-tabla-carrusel text-start mb-3" alt="...">
+                            <img src="images/playeras/playera1.png" class="img-ropa-carrusel text-start mb-3" alt="...">
                             <div class="card-body text-center p-0">
+                                <div class="estrellas col-10 mx-auto mb-2">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/halfStar.png" class="estrella d-inline" alt="">
+                                </div>
                                 <h5 class="card-title">Maddness</h5>
-                                <p class="card-text">Gray/green head.</p>
+                                <p class="card-text mx-auto text-center">$299.00</p>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="card">
-                            <img src="images/playeras/playera2.png" class="img-tabla-carrusel text-start mb-3" alt="...">
+                            <img src="images/playeras/playera2.png" class="img-ropa-carrusel text-start mb-3" alt="...">
                             <div class="card-body text-center p-0">
-                                <h5 class="card-title">Maddness</h5>
-                                <p class="card-text">Gray/green head.</p>
+                                <div class="estrellas col-10 mx-auto mb-2">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/halfStar.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/emptyStar.png" class="estrella d-inline" alt="">
+                                </div>
+                                <h5 class="card-title">Fit & Skate</h5>
+                                <p class="card-text mx-auto text-center">$249.00</p>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="card">
-                            <img src="images/playeras/playera3.png" class="img-tabla-carrusel text-start mb-3" alt="...">
+                            <img src="images/playeras/playera4.png" class="img-ropa-carrusel text-start mb-3" alt="...">
                             <div class="card-body text-center p-0">
-                                <h5 class="card-title">Maddness</h5>
-                                <p class="card-text">Gray/green head.</p>
+                                <div class="estrellas col-10 mx-auto mb-2">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/emptyStar.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/emptyStar.png" class="estrella d-inline" alt="">
+                                </div>
+                                <h5 class="card-title">Chacahual</h5>
+                                <p class="card-text mx-auto text-center">$159.00</p>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="card">
-                            <img src="images/playeras/playera4.png" class="img-tabla-carrusel text-start mb-3" alt="...">
+                            <img src="images/playeras/playera5.png" class="img-ropa-carrusel text-start mb-3" alt="...">
                             <div class="card-body text-center p-0">
-                                <h5 class="card-title">Maddness</h5>
-                                <p class="card-text">Gray/green head.</p>
+                                <div class="estrellas col-10 mx-auto mb-2">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                </div>
+                                <h5 class="card-title">Fresh Skate</h5>
+                                <p class="card-text mx-auto text-center">$349.00</p>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="card">
-                            <img src="images/playeras/playera5.png" class="img-tabla-carrusel text-start mb-3" alt="...">
+                            <img src="images/playeras/playera6.png" class="img-ropa-carrusel text-start mb-3" alt="...">
                             <div class="card-body text-center p-0">
+                                <div class="estrellas col-10 mx-auto mb-2">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/halfStar.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/emptyStar.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/emptyStar.png" class="estrella d-inline" alt="">
+                                </div>
                                 <h5 class="card-title">Maddness</h5>
-                                <p class="card-text">Gray/green head.</p>
+                                <p class="card-text mx-auto text-center">$299.00</p>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="card">
-                            <img src="images/playeras/playera6.png" class="img-tabla-carrusel text-start mb-3" alt="...">
+                            <img src="images/playeras/playera7.png" class="img-ropa-carrusel text-start mb-3" alt="...">
                             <div class="card-body text-center p-0">
+                                <div class="estrellas col-10 mx-auto mb-2">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/halfStar.png" class="estrella d-inline" alt="">
+                                </div>
                                 <h5 class="card-title">Maddness</h5>
-                                <p class="card-text">Gray/green head.</p>
+                                <p class="card-text mx-auto text-center">$299.00</p>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="card">
-                            <img src="images/playeras/playera7.png" class="img-tabla-carrusel text-start mb-3" alt="...">
+                            <img src="images/playeras/playera8.png" class="img-ropa-carrusel text-start mb-3" alt="...">
                             <div class="card-body text-center p-0">
+                                <div class="estrellas col-10 mx-auto mb-2">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/halfStar.png" class="estrella d-inline" alt="">
+                                </div>
                                 <h5 class="card-title">Maddness</h5>
-                                <p class="card-text">Gray/green head.</p>
+                                <p class="card-text mx-auto text-center">$299.00</p>
                             </div>
                         </div>
                     </div>
                     <div class="item">
                         <div class="card">
-                            <img src="images/playeras/playera8.png" class="img-tabla-carrusel text-start mb-3" alt="...">
+                            <img src="images/playeras/playera1.png" class="img-ropa-carrusel text-start mb-3" alt="...">
                             <div class="card-body text-center p-0">
+                                <div class="estrellas col-10 mx-auto mb-2">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                    <img src="PNGs/halfStar.png" class="estrella d-inline" alt="">
+                                </div>
                                 <h5 class="card-title">Maddness</h5>
-                                <p class="card-text">Gray/green head.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="card">
-                            <img src="images/playeras/playera9.png" class="img-tabla-carrusel text-start mb-3" alt="...">
-                            <div class="card-body text-center p-0">
-                                <h5 class="card-title">Maddness</h5>
-                                <p class="card-text">Gray/green head.</p>
+                                <p class="card-text mx-auto text-center">$299.00</p>
                             </div>
                         </div>
                     </div>
 
                 </div>
-                <button class="btn btn-primary leftLst">
-                    << /button>
-                        <button class="btn btn-primary rightLst">></button>
+                <button class="btn btn-primary leftLst"><</button>
+                <button class="btn btn-primary rightLst">></button>
             </div>
         </div>
     </div>
@@ -319,22 +438,43 @@
                             <div class="card">
                                 <img src="images/playeras/playeras2.png" class="card-img-top img-tabla-carrusel text-start" alt="...">
                                 <div class="card-body text-center p-0">
+                                    <div class="estrellas col-10 mx-auto mb-2">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/halfStar.png" class="estrella d-inline" alt="">
+                                    </div>
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quiche card's content.</p>
+                                    <p class="card-text mx-auto text-center">$299.00</p>
                                 </div>
                             </div>
                             <div class="card">
                                 <img src="images/tablas/tabla9.png" class="card-img-top img-tabla-carrusel" alt="...">
                                 <div class="card-body text-center p-0">
+                                    <div class="estrellas col-10 mx-auto mb-2">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/halfStar.png" class="estrella d-inline" alt="">
+                                    </div>
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quf the card's content.</p>
+                                    <p class="card-text mx-auto text-center">$390.00</p>
                                 </div>
                             </div>
                             <div class="card">
                                 <img src="images/playeras/playeras3.png" class="card-img-top img-tabla-carrusel" alt="...">
                                 <div class="card-body text-center p-0">
+                                    <div class="estrellas col-10 mx-auto mb-2">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/halfStar.png" class="estrella d-inline" alt="">
+                                    </div>
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quf the card's content.</p>
+                                    <p class="card-text mx-auto text-center">$390.00</p>
                                 </div>
                             </div>
                         </div>
@@ -342,24 +482,46 @@
                     <div class="carousel-item">
                         <div class="cards-wrapper">
                             <div class="card">
-                                <img src="images/tablas/tabla10.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <img src="images/tablas/tabla10.png" class="card-img-top img-producto-tendencia" alt="...">
                                 <div class="card-body text-center p-0">
+                                    <div class="estrellas col-10 mx-auto mb-2">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/halfStar.png" class="estrella d-inline" alt="">
+                                    </div>
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Som the card's content.</p>
+                                    <p class="card-text mx-auto text-center">$89.00</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="images/playeras/playeras1.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <img src="images/playeras/playeras1.png" class="card-img-top img-producto-tendencia" alt="...">
                                 <div class="card-body text-center p-0">
+                                    <div class="estrellas col-10 mx-auto mb-2">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/halfStar.png" class="estrella d-inline" alt="">
+                                    </div>
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Somef the card's content.</p>
+                                    <p class="card-text mx-auto text-center">$89.00</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="images/tablas/tabla18.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <img src="images/tablas/tabla18.png" class="card-img-top img-producto-tendencia" alt="...">
                                 <div class="card-body text-center p-0">
+                                    <div class="estrellas col-10 mx-auto mb-2">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/halfStar.png" class="estrella d-inline" alt="">
+                                    </div>
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quik of the card's content.</p>
+                                    <p class="card-text mx-auto text-center">$89.00</p>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -367,24 +529,45 @@
                     <div class="carousel-item">
                         <div class="cards-wrapper">
                             <div class="card">
-                                <img src="images/playeras/playeras5.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <img src="images/playeras/playeras5.png" class="card-img-top img-producto-tendencia" alt="...">
                                 <div class="card-body text-center p-0">
+                                    <div class="estrellas col-10 mx-auto mb-2">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/halfStar.png" class="estrella d-inline" alt="">
+                                    </div>
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Sf the card's content.</p>
+                                    <p class="card-text mx-auto text-center">$89.00</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="images/tablas/tabla16.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <img src="images/tablas/tabla16.png" class="card-img-top img-producto-tendencia" alt="...">
                                 <div class="card-body text-center p-0">
+                                    <div class="estrellas col-10 mx-auto mb-2">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/halfStar.png" class="estrella d-inline" alt="">
+                                    </div>
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some q of the card's content.</p>
+                                    <p class="card-text mx-auto text-center">$89.00</p>
                                 </div>
                             </div>
                             <div class="card">
-                                <img src="images/playeras/playera7.png" class="card-img-top img-tabla-carrusel" alt="...">
+                                <img src="images/playeras/playera7.png" class="card-img-top img-producto-tendencia" alt="...">
                                 <div class="card-body text-center p-0">
+                                    <div class="estrellas col-10 mx-auto mb-2">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/star.png" class="estrella d-inline" alt="">
+                                        <img src="PNGs/halfStar.png" class="estrella d-inline" alt="">
+                                    </div>
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Somthe card's content.</p>
+                                    <p class="card-text mx-auto text-center">$89.00</p>
                                 </div>
                             </div>
                         </div>
@@ -560,14 +743,14 @@
                                 <img src="images/tablas/tabla12.png" class="card-img-top img-tabla-carrusel mb-3" alt="...">
                                 <div class="card-body  p-0">
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quf the card's content.</p>
+                                    <p class="card-text">$390.00</p>
                                 </div>
                             </div>
                             <div class="card">
                                 <img src="images/tablas/tabla13.png" class="card-img-top img-tabla-carrusel mb-3" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quf the card's content.</p>
+                                    <p class="card-text">$390.00</p>
                                 </div>
                             </div>
                             <div class="card">
@@ -599,14 +782,14 @@
                                 <img src="images/tablas/tabla18.png" class="card-img-top img-tabla-carrusel mb-3" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quf the card's content.</p>
+                                    <p class="card-text">$390.00</p>
                                 </div>
                             </div>
                             <div class="card">
                                 <img src="images/tablas/tabla16.png" class="card-img-top img-tabla-carrusel mb-3" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quf the card's content.</p>
+                                    <p class="card-text">$390.00</p>
                                 </div>
                             </div>
                         </div>
@@ -680,14 +863,14 @@
                                 <img src="images/playeras/playera2.png" class="card-img-top img-ropa-carrusel" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quf the card's content.</p>
+                                    <p class="card-text">$390.00</p>
                                 </div>
                             </div>
                             <div class="card">
                                 <img src="images/playeras/playera3.png" class="card-img-top img-ropa-carrusel" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quf the card's content.</p>
+                                    <p class="card-text">$390.00</p>
                                 </div>
                             </div>
                             <div class="card">
@@ -810,14 +993,14 @@
                                 <img src="images/tablas/tabla9.png" class="card-img-top img-tendencias" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quf the card's content.</p>
+                                    <p class="card-text">$390.00</p>
                                 </div>
                             </div>
                             <div class="card">
                                 <img src="images/playeras/playeras3.png" class="card-img-top img-tendencias" alt="...">
                                 <div class="card-body text-center p-0">
                                     <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">Some quf the card's content.</p>
+                                    <p class="card-text">$390.00</p>
                                 </div>
                             </div>
                         </div>
