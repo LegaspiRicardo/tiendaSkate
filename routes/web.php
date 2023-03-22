@@ -5,6 +5,8 @@ use App\Http\Controllers\EmpleadoController;
 use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\MarcaController;
 use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\ProductoUserController;
+use App\Http\Controllers\IndexUserController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -22,17 +24,14 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::view('/', 'website/index')->name('tiendaSkate');
-Route::view('/productos', 'website/productos')->name('productos');
 Route::view('/sesion', 'website/iniciosesion')->name('sesion');
+Route::view('/detalle', 'website/piezas/detalle')->name('detalle');
 Route::view('/eventos', 'website/eventos')->name('eventos');
 Route::view('/blog', 'website/blog')->name('blog');
-Route::view('/detalle', 'website/piezas/detalle')->name('detalle');
 
 
 
 
-// Route::view('/panelControl', 'admin/index')->name('panelControl');
 Route::view('/panelControl', 'admin/dashboard')->name('panelControl');
 Route::view('/inventarioTenis', 'admin/tenis')->name('inventarioTenis');
 Route::view('/inventarioRopa', 'admin/ropa')->name('inventarioRopa');
@@ -52,4 +51,7 @@ Route::resource('/marcasAdmin',MarcaController::class);
 Route::resource('/categoriasAdmin',CategoriaController::class);
 
 
-
+//Metodos de controladores
+Route::get('/productos',[ProductoUserController::class, 'index']);
+Route::get('/',[IndexUserController::class, 'index']);
+Route::get('/detalle/{id}',[ProductoUserController::class, 'show']);
