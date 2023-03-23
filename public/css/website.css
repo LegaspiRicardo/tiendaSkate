@@ -47,7 +47,9 @@ body {
 }
 
 
-
+.logotipo{
+    width: 25%;
+}
 
 .navbar-brand,
 .nav-link {
@@ -245,8 +247,7 @@ h1 {
 }
 
 .modelo {
-    height: 550px;
-    width: 80%;
+    width: 100%;
     border-radius: 20px;
 }
 
@@ -914,7 +915,8 @@ h6 {
     position: absolute;
     top: 0;
     z-index: -1;
-    height: 5000px;
+    height: 410%;
+    filter: brightness(0.8);
     object-fit: cover;
 }
 
@@ -940,6 +942,72 @@ h6 {
     border-radius: 10px;
 }
 
+.subtitulo-landing{
+    font-size: 60px;
+    margin-bottom: 5%;
+}
+
+
+.seccion-categorias-landing{
+padding: 100px 0;
+}
+
+.categoria-landing{
+    opacity: 0.8;
+    margin: 0 25%;
+}
+
+.categoria-landing:hover{
+    opacity: 1;
+    margin: 0 25%;
+    transform: scale(1.2);
+}
+
+.subtitulo-gancho{
+    font-size: 60px;
+    margin: 10% 0 0 0;
+}
+
+.texto-gancho{  
+    opacity: 0.8;
+}
+
+.titulo-gancho{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.gif-gancho{
+    width: 500px;
+    mix-blend-mode: screen;
+    filter: invert();
+}
+
+.img-gancho{
+    width: 500px;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.texto-gancho{
+    font-size: 24px;
+    opacity: 0.9;
+}
+
+.link-descarga{
+    color: white;
+    border-radius: 10px;
+    padding: 1% 3%;
+    border: 1px solid white;
+}
+
+.link-descarga:hover{
+    color: white;
+    text-shadow:1px 1px black;
+    background-color: #fafafa77;
+    transform: scale(1.2);
+    text-decoration: none;
+}
 
 /* --------------RESPONSIVE -------------*/
 
