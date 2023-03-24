@@ -18,7 +18,7 @@
             <div class="col-8 texto-portada p-0">
                 <p class="">Tablas, tenis, adrenalina y diversión.</p>
                 <h1 class="">Nuestro estilo de vida</h1>
-                <p class="fuente-gris-claro">Visita la tienda en linea y conoce todos nuestros productos.</p>
+                <p class="fuente-gris-claro">Visita la tienda en línea y conoce todos nuestros productos.</p>
                 <a class="mt-2 boton-portada" href="{{url('productos')}}">Ver más</a>
             </div>
         </div>
@@ -617,7 +617,7 @@
     <div class="row contacto-form mb-5">
         <div class="col-6 ml-auto ">
             <div class="col-10 mx-auto">
-                <h2 class="  mb-2">Contactanos</h2>
+                <h2 class="  mb-2">Contáctanos</h2>
                 <p class="mb-3">Te responderemos lo más pronto posible :)</p>
                 <form class="formulario mx-auto needs-validation" method="POST">
                     <div class="row">
@@ -640,7 +640,7 @@
         <div class="col-6 p-0">
 
             <div class="col-10 ml-auto">
-                <h2 class="  mb-2">Llamanos</h2>
+                <h2 class="  mb-2">Llámanos</h2>
                 <p class="mb-2">Podemos ayudarte a buscar existencia y personalizar tu orden. :)</p>
                 <div class="row">
                     <div class="col-4">
