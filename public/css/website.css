@@ -1023,6 +1023,37 @@ h6 {
     text-decoration: none;
 }
 
+
+
+.titulo-cuenta{
+    font-size: 50px;
+    text-shadow: 1px 1px black;
+    margin: 2% 0;
+}
+
+.subtitulo-cuenta{
+    font-size: 40px;
+}
+
+.caja-enlace-cuenta{
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.imagen-cuenta-fondo {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(65%);
+}
+
+.icono-cuenta{
+    opacity: 0.8;
+    width: 55%;
+}
+
+
+
 /* --------------RESPONSIVE -------------*/
 
 
