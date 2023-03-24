@@ -15,7 +15,60 @@
 
 
         <div class="col-6 m-0 p-0">
-            <div class="sketchfab-embed-wrapper mt-3 text-center mx-auto"> <iframe title="Untitled" class="modelo" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/ff2ef0b619bf4a95a6515ad265853435/embed?autostart=1&ui_hint=0"> </iframe> </div>
+
+        <div class="wrap-gallery-article modelo mx-auto mt-3">
+        <div id="myCarouselArticle" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarouselArticle" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarouselArticle" data-slide-to="1"></li>
+                <li data-target="#myCarouselArticle" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img class="img-fluid" src="images/tablas/tabla8.png" alt="Card image cap" title="">
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid" src="images/tablas/tabla5.png" alt="Card image cap" title="">
+                </div>
+                <div class="carousel-item">
+                    <img class="img-fluid" src="images/tablas/tabla6.png" alt="Card image cap" title="">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarouselArticle" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarouselArticle" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="row hidden-xs mx-auto" id="slider-thumbs">
+            <!-- Bottom switcher of slider -->
+            <ul class="reset-ul d-flex mx-auto flex-wrap list-thumb-gallery">
+                <li class="col-sm-3">
+                    <a class="thumbnail" data-target="#myCarouselArticle" data-slide-to="0">
+                        <img class="img-fluid" src="images/tablas/tabla8.png">
+                    </a>
+                </li>
+
+                <li class="col-sm-3">
+                    <a class="thumbnail" data-target="#myCarouselArticle" data-slide-to="1">
+                        <img class="img-fluid" src="images/tablas/tabla5.png" alt="">
+                    </a>
+                </li>
+
+                <li class="col-sm-3">
+                    <a class="thumbnail" data-target="#myCarouselArticle" data-slide-to="2">
+                        <img class="img-fluid" src="images/tablas/tabla6.png" alt="">
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+    </div>
         </div>
 
 
@@ -68,6 +121,12 @@
         </div>
 
     </div>
+
+
+
+
+
+
 
 
 
