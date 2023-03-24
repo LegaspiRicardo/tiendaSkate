@@ -28,7 +28,10 @@ Route::view('/sesion', 'website/iniciosesion')->name('sesion');
 Route::view('/detalle', 'website/piezas/detalle')->name('detalle');
 Route::view('/eventos', 'website/eventos')->name('eventos');
 Route::view('/blog', 'website/blog')->name('blog');
+Route::view('/landing', 'website/landing')->name('landing');
 
+Route::view('/miCuenta', 'website/clientes/index')->name('miCuenta');
+Route::view('/misPedidos', 'website/clientes/pedidos')->name('misPedidos');
 
 
 
