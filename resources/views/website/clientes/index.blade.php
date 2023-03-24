@@ -12,10 +12,12 @@
     <h2 class="mx-auto text-center titulo-cuenta">Mi cuenta</h2>
     <div class="row col-6 mx-auto text-center m-0 p-0 mb-5">
         <div class="col-6 ">
+            <a href="{{url('/misPedidos')}}">
             <div class="col-10 mx-auto caja-enlace-cuenta">
                 <img src="PNGs/checkout.png" alt="" class="icono-cuenta">
                 <h5 class="subtitulo-cuenta">Mis pedidos</h5>
             </div>
+            </a>
         </div>
 
         <div class="col-6 ">
